@@ -17,20 +17,22 @@ const Header = () => {
   return (
     <header className="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-100">
       {/* Top contact bar */}
-      <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2 hover:text-blue-200 transition-colors">
-              <Phone size={14} />
-              <span>+1 (555) 123-4567</span>
+      <div className="hidden md:block">
+        <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-2">
+          <div className="container mx-auto px-4 flex justify-between items-center text-sm">
+            <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-2 hover:text-blue-200 transition-colors">
+                <Phone size={14} />
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div className="flex items-center space-x-2 hover:text-blue-200 transition-colors">
+                <Mail size={14} />
+                <span>info@reliablethermocraft.com</span>
+              </div>
             </div>
-            <div className="flex items-center space-x-2 hover:text-blue-200 transition-colors">
-              <Mail size={14} />
-              <span>info@reliablethermocraft.com</span>
+            <div className="text-sm opacity-90">
+              Professional Thermal Solutions Since 1995
             </div>
-          </div>
-          <div className="hidden md:block text-sm opacity-90">
-            Professional Thermal Solutions Since 1995
           </div>
         </div>
       </div>
