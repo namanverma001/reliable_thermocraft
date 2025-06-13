@@ -1,10 +1,11 @@
-
 import React, { useState, useEffect } from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useViewport } from "./hooks/use-viewport";
+import "./styles/mobile-viewport.css";
 import Index from "./pages/Index";
 import Products from "./pages/Products";
 import Services from "./pages/Services";
@@ -19,20 +20,20 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
 
+  // Use the viewport hook
+  useViewport();
+
   useEffect(() => {
+    window.scrollTo(0, 0);
     setIsLoading(true);
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 800);
+    setTimeout(() => setIsLoading(false), 800);
+  }, [location]);
 
-    return () => clearTimeout(timer);
-  }, [location.pathname]);
-
-  if (isLoading) {
-    return <Loading />;
-  }
-
-  return <div className="animate-fade-in">{children}</div>;
+  return (
+    <div className="relative">
+      {isLoading ? <Loading /> : children}
+    </div>
+  );
 };
 
 const App = () => {

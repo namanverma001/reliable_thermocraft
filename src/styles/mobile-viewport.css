@@ -1,0 +1,69 @@
+/* Mobile viewport fixes */
+:root {
+    --vh: 1vh;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    min-height: calc(var(--vh) * 100);
+    overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+    touch-action: manipulation;
+}
+
+body {
+    position: relative;
+    min-height: -webkit-fill-available;
+}
+
+#root {
+    min-height: 100vh;
+    min-height: calc(var(--vh) * 100);
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Fix for mobile viewport scaling */
+@media screen and (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+        height: 100%;
+        position: fixed;
+        width: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    #root {
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: absolute;
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Fix container width */
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden;
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+
+    /* Prevent zoom */
+    * {
+        touch-action: pan-x pan-y;
+    }
+}
