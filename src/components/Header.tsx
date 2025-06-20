@@ -138,6 +138,9 @@ const Header = () => {
             <div className="flex flex-col space-y-3">
               <button onClick={() => handleNavigation('/')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Home
+                <button onClick={() => handleNavigation('/about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
+                  About
+                </button>
               </button>
               <button onClick={() => handleNavigation('/about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 About
