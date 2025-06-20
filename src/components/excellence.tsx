@@ -1,20 +1,21 @@
-import BgImage from '@/Assets/condenser.jpg';
+import BgImage from '@/Assets/team1.jpg';
 import { Check, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function RDExcellenceCenter() {
     const capabilities = [
-        "Distillation Setup 5L",
-        "Thin Film Evaporator Setup",
-        "Membrane Distillation 10L & 1KLD",
-        "Pervaporation 10L & 1KLD",
-        "Ultrafiltration and Nano Filtration 10L & 1KLD",
-        "Agitated Thin Film Dryer 1.5sq.m",
-        "Wiped Film Evaporator 1.5sq.m",
-        "Batch Distillation 10L & 100L",
-        "Fermentor 100L"
-    ]; return (
+        "Lab-Scale Distillation Setup",
+        "Thin Film Evaporation",
+        "Membrane Separation Systems",
+        "Advanced Pervaporation Unit",
+        "Ultrafiltration & Nanofiltration",
+        "Agitated Thin Film Dryer",
+        "Wiped Film Evaporator",
+        "Batch Distillation Systems",
+        "Industrial Fermentation Unit"
+    ];
+    return (
         <section className="relative min-h-screen w-full overflow-hidden">
             {/* Background Image */}
             <img

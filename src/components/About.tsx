@@ -1,7 +1,15 @@
 import condenser from "@/Assets/condenser.jpg"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
+import pressurevessel from '@/Assets/products/pressurevessel.jpg'
+import chemicalreactor from '@/Assets/products/chemicalreactor.jpg'
+import heatExchanger from '@/Assets/products/heatexchanger.png';
+import storageTank from '@/Assets/products/storagetank.jpg';       // Adjust the path as necessary
+import distillationColumn from '@/Assets/products/distillationcolumn.png'; // Adjust the path as necessary
+import reboiler from '@/Assets/products/reboiler.jpg';             // Adjust the path as necessary
+import limpetJacketed from '@/Assets/products/limpetcoil.png'; // Adjust the path as necessary
 
+import finnedHeatExchanger from '@/Assets/products/fineheat.jpg';
 const About = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
@@ -174,7 +182,7 @@ const About = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src={condenser}
+                  src={pressurevessel}
                   alt="Pressure Vessel Manufacturing"
                   className="w-full h-full object-cover"
                 />
@@ -192,7 +200,7 @@ const About = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src={condenser}
+                  src={heatExchanger}
                   alt="Heat Exchanger Equipment"
                   className="w-full h-full object-cover"
                 />
@@ -210,7 +218,7 @@ const About = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src={condenser}
+                  src={chemicalreactor}
                   alt="Chemical Reactor"
                   className="w-full h-full object-cover"
                 />
@@ -229,7 +237,7 @@ const About = () => {
               transition={{ duration: 0.3 }}
             >
               <img
-                src={condenser}
+                src={storageTank}
                 alt="Storage Tank"
                 className="w-full h-full object-cover rounded"
               />
@@ -254,7 +262,7 @@ const About = () => {
               }}
             >
               <img
-                src={condenser}
+                src={distillationColumn}
                 alt="Distillation Column"
                 className="w-full h-full object-cover rounded-full"
               />

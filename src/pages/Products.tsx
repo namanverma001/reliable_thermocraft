@@ -23,7 +23,15 @@ import {
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import { motion } from "framer-motion"
+import pressurevessel from '@/Assets/products/pressurevessel.jpg'
+import chemicalreactor from '@/Assets/products/chemicalreactor.jpg'
+import heatExchanger from '@/Assets/products/heatexchanger.png';
+import storageTank from '@/Assets/products/storagetank.jpg';       // Adjust the path as necessary
+import distillationColumn from '@/Assets/products/distillationcolumn.png'; // Adjust the path as necessary
+import reboiler from '@/Assets/products/reboiler.jpg';             // Adjust the path as necessary
+import limpetJacketed from '@/Assets/products/limpetcoil.png'; // Adjust the path as necessary
 
+import finnedHeatExchanger from '@/Assets/products/fineheat.jpg';
 type Product = {
   id: number
   title: string
@@ -45,312 +53,164 @@ type Product = {
 const products: Product[] = [
   {
     id: 1,
-    title: "Copper Heat Exchanger",
-    subtitle: "Shell And Tube Heat Exchanger",
-    description: "High-efficiency copper heat exchangers designed for optimal thermal transfer in industrial applications with superior corrosion resistance.",
-    detailedDescription: "Our copper heat exchangers are engineered for superior performance in demanding industrial environments. Featuring corrosion-resistant copper construction and optimized tube configurations for maximum heat transfer efficiency. These units are designed to handle various process fluids while maintaining excellent thermal conductivity and durability.",
-    category: "Heat Exchangers",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=300&fit=crop",
-    ],
-    features: ["Corrosion Resistant", "High Thermal Conductivity", "Durable Construction", "Easy Maintenance"],
+    title: "Pressure Vessel",
+    subtitle: "Storage & Containment",
+    description: "Custom-engineered pressure vessels designed for high-pressure and corrosive applications with reliable performance.",
+    detailedDescription: "Our pressure vessels are engineered to meet stringent safety standards while providing reliable performance in gas and liquid processing applications. Built with corrosion-resistant materials and designed to handle various pressures, these vessels are ideal for chemical, oil & gas, and pharma sectors.",
+    category: "Pressure Vessels",
+    image: pressurevessel,
+    gallery: [pressurevessel],
+    features: ["High Pressure", "Corrosion Resistant", "Custom Design", "Long Service Life"],
     specifications: {
-      Material: "Copper Tubes, Steel Shell",
-      "Temperature Range": "-20°C to 200°C",
-      "Pressure Rating": "Up to 16 bar",
-      "Heat Transfer Area": "10-500 m²",
-      "Tube Diameter": "12-25 mm",
-      "Shell Diameter": "200-2000 mm",
+      "Design Pressure": "Up to 100 bar",
+      "Material": "SS316/SS304/Carbon Steel",
+      "Capacity": "100L to 100,000L"
     },
-    applications: ["Chemical Processing", "HVAC Systems", "Power Generation", "Food & Beverage"],
-    rating: 4.8,
-    reviews: 24,
+    applications: ["Chemical Processing", "Oil & Gas", "Pharmaceutical"],
+    rating: 4.7,
+    reviews: 21
   },
   {
     id: 2,
-    title: "Falling Film Evaporator",
-    subtitle: "Shell And Tube Heat Exchanger",
-    description: "Advanced falling film evaporators for efficient liquid concentration and separation processes in chemical industries.",
-    detailedDescription: "Our falling film evaporators utilize gravity-driven thin film technology to achieve maximum heat transfer efficiency while minimizing energy consumption. Perfect for heat-sensitive materials and continuous operation requirements.",
-    category: "Heat Exchangers",
-    image: "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=300&fit=crop",
-    ],
-    features: ["Energy Efficient", "Gentle Processing", "Continuous Operation", "Low Fouling"],
+    title: "Chemical Reactors",
+    subtitle: "Reaction Systems",
+    description: "Robust chemical reactors for various reaction types with options for agitation, temperature control, and pressure regulation.",
+    detailedDescription: "Reliable Thermocraft’s chemical reactors offer precise temperature control, custom agitation, and high-pressure tolerance. Ideal for batch and continuous processing in pharmaceutical, fine chemical, and petrochemical industries.",
+    category: "Reactors",
+    image: chemicalreactor,
+    gallery: [chemicalreactor],
+    features: ["Agitation", "Temperature Control", "Jacketed Design", "Durable Construction"],
     specifications: {
-      Material: "Stainless Steel 316L",
-      "Evaporation Capacity": "100-10000 kg/hr",
-      "Heat Transfer Area": "5-200 m²",
-      "Operating Pressure": "Vacuum to 3 bar",
-      "Temperature Range": "40°C to 150°C",
+      "Capacity": "50L to 50,000L",
+      "Material": "SS316/SS304/Glass Lined",
+      "Max Temperature": "Up to 300°C"
     },
-    applications: ["Pharmaceutical", "Food Processing", "Chemical Concentration", "Wastewater Treatment"],
-    rating: 4.7,
-    reviews: 18,
+    applications: ["Pharmaceuticals", "Petrochemicals", "Fine Chemicals"],
+    rating: 4.6,
+    reviews: 19
   },
   {
     id: 3,
-    title: "Rising Film Evaporator",
-    subtitle: "Force Circulation Evaporators",
-    description: "High-performance rising film evaporators designed for efficient concentration of heat-sensitive materials.",
-    detailedDescription: "Rising film evaporators use natural circulation principles to create efficient heat transfer while maintaining product quality. Ideal for applications requiring gentle handling of temperature-sensitive products.",
+    title: "Heat Exchangers",
+    subtitle: "Shell & Tube / Plate / Finned Type",
+    description: "Highly efficient heat exchangers including shell & tube, plate, and air-cooled models for industrial heat transfer applications.",
+    detailedDescription: "Our heat exchangers are designed for maximum thermal efficiency with options including shell & tube, finned tube, and plate types. Built to industry standards using stainless steel, copper, and special alloys for long life and high performance.",
     category: "Heat Exchangers",
-    image: "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=500&h=300&fit=crop",
-    ],
-    features: ["Natural Circulation", "Low Energy Consumption", "Minimal Maintenance", "High Efficiency"],
+    image: heatExchanger,
+    gallery: [heatExchanger],
+    features: ["Thermal Efficiency", "Compact Design", "Low Fouling", "Custom Options"],
     specifications: {
-      Material: "Stainless Steel 304/316",
-      "Circulation Rate": "High velocity flow",
-      "Heat Transfer Coefficient": "1000-3000 W/m²K",
-      "Concentration Range": "5-80% solids",
-      "Operating Temperature": "60°C to 120°C",
+      "Type": "Shell & Tube / Plate / Finned",
+      "Material": "SS316/SS304/Copper",
+      "Thermal Duty": "Up to 500 kW"
     },
-    applications: ["Sugar Industry", "Dairy Processing", "Chemical Solutions", "Fruit Juice Concentration"],
-    rating: 4.6,
-    reviews: 15,
+    applications: ["HVAC", "Power Plants", "Chemical Industry"],
+    rating: 4.8,
+    reviews: 25
   },
   {
     id: 4,
-    title: "Fins Tube Heat Exchanger",
-    subtitle: "Air Heat Exchanger / Heating Coil",
-    description: "Extended surface heat exchangers with finned tubes for enhanced air-to-fluid heat transfer applications.",
-    detailedDescription: "Our finned tube heat exchangers maximize heat transfer surface area through strategically designed fins, making them ideal for air heating and cooling applications. These units offer superior performance in HVAC and industrial air treatment systems.",
-    category: "Heat Exchangers",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500&h=300&fit=crop",
-    ],
-    features: ["Extended Surface Area", "Compact Design", "High Air Flow", "Corrosion Resistant Fins"],
+    title: "Storage Tanks",
+    subtitle: "Storage & Containment",
+    description: "Durable storage tanks designed for atmospheric and low-pressure applications, customizable for various industries.",
+    detailedDescription: "Our storage tanks are constructed from high-quality materials to ensure safe storage of process liquids. Designed for both atmospheric and low-pressure conditions, they are used across water treatment, food, and chemical sectors.",
+    category: "Storage",
+    image: storageTank,
+    gallery: [storageTank],
+    features: ["Corrosion Resistant", "Customizable", "Leak-Proof", "High Capacity"],
     specifications: {
-      "Fin Material": "Aluminum/Copper",
-      "Tube Material": "Copper/Stainless Steel",
-      "Air Velocity": "2-15 m/s",
-      "Heat Duty": "50-5000 kW",
-      "Operating Pressure": "Up to 25 bar",
+      "Capacity": "500L to 100,000L",
+      "Material": "SS316/SS304/MS",
+      "Configuration": "Vertical/Horizontal"
     },
-    applications: ["HVAC Systems", "Air Preheaters", "Industrial Drying", "Process Air Heating"],
+    applications: ["Water Storage", "Chemical Storage", "Food Industry"],
     rating: 4.5,
-    reviews: 22,
+    reviews: 17
   },
   {
     id: 5,
     title: "Distillation Column",
-    subtitle: "Separation Equipment",
-    description: "Precision-engineered distillation columns for efficient separation of liquid mixtures based on volatility differences.",
-    detailedDescription: "Our distillation columns are designed with optimized internals and precise engineering to achieve maximum separation efficiency. These columns can handle various feed compositions and provide consistent product purity.",
+    subtitle: "Separation Systems",
+    description: "High-efficiency distillation columns for separation and purification of chemical mixtures in continuous or batch modes.",
+    detailedDescription: "Our distillation columns are designed with structured and random packing options or trays for optimal separation. Built for continuous or batch operations, these units are ideal for refining, recovery, and high-purity production.",
     category: "Reactors",
-    image: "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=300&fit=crop",
-    ],
+    image: distillationColumn,
+    gallery: [distillationColumn],
     features: ["High Separation Efficiency", "Optimized Internals", "Flexible Operation", "Energy Efficient"],
     specifications: {
-      Material: "Stainless Steel 316L",
-      "Column Diameter": "300-3000 mm",
-      "Height": "5-50 meters",
-      "Number of Trays": "10-100 stages",
-      "Operating Pressure": "Vacuum to 40 bar",
+      "Height": "Up to 30 meters",
+      "Material": "SS316/SS304",
+      "Packing": "Structured/Random/Tray"
     },
-    applications: ["Petroleum Refining", "Chemical Processing", "Alcohol Production", "Solvent Recovery"],
+    applications: ["Petrochemical", "Solvent Recovery", "Pharmaceutical"],
     rating: 4.9,
-    reviews: 31,
+    reviews: 28
   },
   {
     id: 6,
-    title: "Chemical Reactor",
-    subtitle: "With Agitator and Limpet Coil",
-    description: "Versatile chemical reactors equipped with efficient agitation systems and temperature control through limpet coils.",
-    detailedDescription: "Our chemical reactors combine robust construction with precise temperature control and optimal mixing capabilities. The integrated limpet coil system ensures uniform temperature distribution while the agitator provides consistent mixing for various chemical processes.",
-    category: "Reactors",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=500&h=300&fit=crop",
-    ],
-    features: ["Efficient Mixing", "Temperature Control", "Corrosion Resistant", "Scalable Design"],
+    title: "Re-boiler",
+    subtitle: "Thermal Equipment",
+    description: "Reliable re-boilers designed to supply heat to distillation columns with consistent thermal efficiency and control.",
+    detailedDescription: "Engineered for efficient heat supply, our re-boilers ensure smooth distillation operations with options including thermosyphon, kettle, and forced circulation types.",
+    category: "Heat Exchangers",
+    image: reboiler,
+    gallery: [reboiler],
+    features: ["Column Integration", "High Efficiency", "Compact Design", "Multiple Configurations"],
     specifications: {
-      Material: "Stainless Steel 316L",
-      "Volume Range": "100-10000 liters",
-      "Agitator Type": "Anchor/Paddle/Turbine",
-      "Temperature Range": "-20°C to 300°C",
-      "Pressure Rating": "Vacuum to 10 bar",
+      "Type": "Kettle / Thermosyphon / Forced Circulation",
+      "Material": "SS316/SS304",
+      "Capacity": "Custom Designs"
     },
-    applications: ["Chemical Synthesis", "Pharmaceutical Manufacturing", "Food Processing", "Polymer Production"],
-    rating: 4.8,
-    reviews: 27,
+    applications: ["Distillation", "Refining", "Chemical Recovery"],
+    rating: 4.6,
+    reviews: 22
   },
   {
     id: 7,
-    title: "Hydro Generator Reactor",
-    subtitle: "With Agitator and Limpet Coil",
-    description: "Specialized hydro generator reactors designed for hydrogenation processes with precise control and safety features.",
-    detailedDescription: "Advanced hydro generator reactors engineered for safe and efficient hydrogenation reactions. Features include high-pressure capability, advanced safety systems, and precise temperature control for optimal reaction conditions.",
+    title: "Limpet Coil & Jacketed Vessels",
+    subtitle: "Reaction Systems",
+    description: "Specialized vessels with limpet coil or jacketed options for controlled heating/cooling in chemical processing.",
+    detailedDescription: "These vessels ensure precise thermal control during reactions through limpet coil or jacketed designs, making them perfect for sensitive and exothermic processes.",
     category: "Reactors",
-    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-    ],
-    features: ["High Pressure Capability", "Safety Systems", "Catalyst Support", "Automated Control"],
+    image: limpetJacketed,
+    gallery: [limpetJacketed],
+    features: ["Thermal Control", "Pressure Rated", "Agitation Options", "Durable"],
     specifications: {
-      Material: "Hastelloy/Inconel",
-      "Operating Pressure": "Up to 100 bar",
-      "Temperature Range": "50°C to 400°C",
-      "Hydrogen Flow Rate": "1-1000 Nm³/hr",
-      "Catalyst Loading": "Fixed/Slurry bed",
+      "Capacity": "100L to 50,000L",
+      "Material": "SS316/SS304",
+      "Pressure": "Up to 10 bar"
     },
-    applications: ["Hydrogenation Reactions", "Pharmaceutical Synthesis", "Fine Chemicals", "Catalyst Testing"],
+    applications: ["Chemical Reaction", "Heat Exchange", "Pharmaceutical"],
     rating: 4.7,
-    reviews: 19,
+    reviews: 20
   },
   {
     id: 8,
-    title: "Pressure Vessel",
-    subtitle: "Gas Scrubber / Knock Out Drum",
-    description: "Robust pressure vessels designed for gas-liquid separation and scrubbing applications in various industrial processes.",
-    detailedDescription: "Our pressure vessels are engineered to meet stringent safety standards while providing reliable performance in gas processing applications. These units effectively separate liquid droplets from gas streams and can handle various operating conditions.",
-    category: "Pressure Vessels",
-    image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=500&h=300&fit=crop",
-    ],
-    features: ["ASME Code Compliance", "Efficient Separation", "Corrosion Resistant", "Easy Maintenance"],
+    title: "Finned Tube Heat Exchanger / Steam Air Heater / Hot Water Coils",
+    subtitle: "Heat Transfer Equipment",
+    description: "Versatile finned tube heat exchangers and air heaters for efficient thermal management in air and liquid applications.",
+    detailedDescription: "These units maximize thermal transfer in compact footprints. Ideal for air heating, steam distribution, and HVAC applications with superior energy efficiency.",
+    category: "Heat Exchangers",
+    image: finnedHeatExchanger,
+    gallery: [finnedHeatExchanger],
+    features: ["Compact", "Energy Efficient", "Air Heating", "High Performance"],
     specifications: {
-      Material: "Carbon Steel/Stainless Steel",
-      "Design Pressure": "Up to 150 bar",
-      "Design Temperature": "-50°C to 400°C",
-      "Volume Range": "0.1-100 m³",
-      "Internals": "Demister pads/Wire mesh",
+      "Type": "Finned Tube / Coil / Air Heater",
+      "Material": "SS/Copper/Aluminium",
+      "Temperature": "Up to 300°C"
     },
-    applications: ["Gas Processing", "Petrochemical", "Oil & Gas", "Chemical Plants"],
-    rating: 4.6,
-    reviews: 23,
-  },
-  {
-    id: 9,
-    title: "Gas Filter Separator",
-    subtitle: "Pressure Vessel",
-    description: "Advanced gas filter separators for removing solid particles and liquid droplets from gas streams with high efficiency.",
-    detailedDescription: "These specialized pressure vessels combine filtration and separation technologies to ensure clean gas streams. Designed with replaceable filter elements and efficient liquid collection systems for continuous operation.",
-    category: "Pressure Vessels",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=500&h=300&fit=crop",
-    ],
-    features: ["High Filtration Efficiency", "Replaceable Elements", "Automatic Drainage", "Low Pressure Drop"],
-    specifications: {
-      "Filtration Rating": "0.1-100 microns",
-      "Operating Pressure": "Up to 100 bar",
-      "Temperature Range": "-40°C to 200°C",
-      "Gas Flow Rate": "10-10000 Nm³/hr",
-      "Filter Media": "Pleated/Cartridge/Coalescing",
-    },
-    applications: ["Natural Gas Processing", "Compressed Air Systems", "Instrument Air", "Process Gas Cleaning"],
-    rating: 4.7,
-    reviews: 20,
-  },
-  {
-    id: 10,
-    title: "Storage Tank",
-    subtitle: "Industrial Storage Solution",
-    description: "Versatile storage tanks designed for safe and efficient storage of various liquids and chemicals in industrial applications.",
-    detailedDescription: "Our storage tanks are constructed with high-quality materials and designed to meet industry standards for safe storage of chemicals, water, and other process fluids. Available in various sizes and configurations to meet specific requirements.",
-    category: "Storage",
-    image: "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-    ],
-    features: ["Leak-Proof Design", "Chemical Resistant", "Various Capacities", "Easy Installation"],
-    specifications: {
-      Material: "Stainless Steel/FRP/Carbon Steel",
-      "Capacity Range": "100-100000 liters",
-      "Design Pressure": "Atmospheric to 10 bar",
-      "Temperature Range": "-20°C to 200°C",
-      "Insulation": "Optional",
-    },
-    applications: ["Chemical Storage", "Water Treatment", "Food & Beverage", "Pharmaceutical"],
+    applications: ["HVAC Systems", "Drying Processes", "Industrial Heating"],
     rating: 4.5,
-    reviews: 35,
-  },
-  {
-    id: 11,
-    title: "Storage Tank with Limpet Coil",
-    subtitle: "Temperature Controlled Storage",
-    description: "Advanced storage tanks equipped with limpet coils for precise temperature control during storage and processing.",
-    detailedDescription: "These specialized storage tanks feature integrated limpet coil systems that provide uniform heating or cooling throughout the stored material. Perfect for applications requiring temperature maintenance or gradual heating/cooling processes.",
-    category: "Storage",
-    image: "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-    ],
-    features: ["Temperature Control", "Uniform Heating", "Energy Efficient", "Precise Control"],
-    specifications: {
-      Material: "Stainless Steel 316L",
-      "Heating/Cooling Medium": "Steam/Hot Water/Glycol",
-      "Temperature Control": "±2°C accuracy",
-      "Coil Surface Area": "Optimized for capacity",
-      "Insulation": "High-grade thermal insulation",
-    },
-    applications: ["Chocolate Manufacturing", "Chemical Processing", "Pharmaceutical", "Food Processing"],
-    rating: 4.8,
-    reviews: 16,
-  },
-  {
-    id: 12,
-    title: "Water Bath Heater",
-    subtitle: "Precision Heating System",
-    description: "Reliable water bath heaters for precise temperature control in laboratory and industrial heating applications.",
-    detailedDescription: "Our water bath heaters provide stable and uniform heating for various applications requiring precise temperature control. These units feature advanced temperature controllers and safety systems for reliable operation.",
-    category: "Reactors",
-    image: "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=500&h=300&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500&h=300&fit=crop",
-    ],
-    features: ["Precise Temperature Control", "Uniform Heating", "Safety Features", "Digital Display"],
-    specifications: {
-      "Temperature Range": "Ambient to 200°C",
-      "Temperature Accuracy": "±0.5°C",
-      "Bath Volume": "5-500 liters",
-      "Heating Elements": "Stainless steel immersion",
-      "Control System": "PID controller",
-    },
-    applications: ["Laboratory Testing", "Quality Control", "Sample Preparation", "Industrial Heating"],
-    rating: 4.6,
-    reviews: 28,
-  },
-]
+    reviews: 18
+  }
+];
+
 
 const categories = [
-  { name: "Heat Exchangers", icon: Thermometer, count: 4 },
-  { name: "Reactors", icon: Settings, count: 4 },
-  { name: "Storage", icon: Container, count: 2 },
-  { name: "Pressure Vessels", icon: Gauge, count: 2 },
+  { name: "Heat Exchangers", icon: Thermometer },
+  { name: "Reactors", icon: Settings },
+  { name: "Storage", icon: Container, },
+  { name: "Pressure Vessels", icon: Gauge },
 ]
 
 const ImageGallery: React.FC<{
@@ -550,17 +410,7 @@ export default function Products() {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-2 gap-4">
-                        <Button className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                          Request Quote
-                        </Button>
-                        <Button
-                          variant="outline"
-                          className="w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                        >
-                          Download Specs
-                        </Button>
-                      </div>
+
                     </motion.div>
                   </div>
                 </div>
@@ -676,9 +526,7 @@ export default function Products() {
                             }`} />
                         </motion.div>
                         <CardTitle className="text-xl md:text-2xl text-gray-900">{category.name}</CardTitle>
-                        <CardDescription className="text-base md:text-lg text-gray-600">
-                          {category.count} Products Available
-                        </CardDescription>
+
                       </CardHeader>
                     </Card>
                   </motion.div>

@@ -1,14 +1,21 @@
-"use client"
 
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
+import pressurevessel from '@/Assets/products/pressurevessel.jpg'
+import chemicalreactor from '@/Assets/products/chemicalreactor.jpg'
+import heatExchanger from '@/Assets/products/heatexchanger.png';
+import storageTank from '@/Assets/products/storagetank.jpg';       // Adjust the path as necessary
+import distillationColumn from '@/Assets/products/distillationcolumn.png'; // Adjust the path as necessary
+import reboiler from '@/Assets/products/reboiler.jpg';             // Adjust the path as necessary
+import limpetJacketed from '@/Assets/products/limpetcoil.png'; // Adjust the path as necessary
+import finnedHeatExchanger from '@/Assets/products/fineheat.jpg';
 
 const equipmentData = {
     "pressure-vessels": {
         title: "Pressure Vessels",
         description:
             "High-quality pressure vessels designed for various industrial applications. Our vessels are manufactured to meet international standards and can handle extreme pressures and temperatures.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: pressurevessel,
         specifications: [
             "Working pressure: Up to 300 bar",
             "Temperature range: -40°C to 600°C",
@@ -20,7 +27,7 @@ const equipmentData = {
         title: "Chemical Reactors",
         description:
             "Advanced chemical reactors for pharmaceutical, chemical, and petrochemical industries. Designed for optimal mixing, heat transfer, and reaction control.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: chemicalreactor,
         specifications: [
             "Volume: 100L to 20,000L",
             "Agitation speed: Variable RPM",
@@ -32,7 +39,7 @@ const equipmentData = {
         title: "Heat Exchangers",
         description:
             "Efficient heat exchangers for thermal management in industrial processes. Available in shell & tube, plate, and spiral configurations.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: heatExchanger,
         specifications: [
             "Heat transfer area: 1-1000 m²",
             "Design pressure: Up to 40 bar",
@@ -44,7 +51,7 @@ const equipmentData = {
         title: "Storage Tanks",
         description:
             "Robust storage tanks for liquid and gas storage applications. Custom-designed for specific requirements and environmental conditions.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: storageTank,
         specifications: [
             "Capacity: 1,000L to 100,000L",
             "Material: MS, SS304, SS316L",
@@ -56,7 +63,7 @@ const equipmentData = {
         title: "Distillation Column",
         description:
             "Precision-engineered distillation columns for separation processes. Optimized for maximum efficiency and product purity.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: distillationColumn,
         specifications: [
             "Height: 3-30 meters",
             "Diameter: 0.5-5 meters",
@@ -68,7 +75,7 @@ const equipmentData = {
         title: "Re-boiler",
         description:
             "High-performance re-boilers for distillation and evaporation systems. Designed for optimal heat transfer and energy efficiency.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: reboiler,
         specifications: [
             "Heat duty: 50kW to 5MW",
             "Types: Thermosiphon, Forced circulation",
@@ -80,7 +87,7 @@ const equipmentData = {
         title: "Limpet Coil & Jacketed Vessels",
         description:
             "Specialized vessels with limpet coils and jackets for precise temperature control in chemical and pharmaceutical processes.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: limpetJacketed,
         specifications: [
             "Volume: 100L to 10,000L",
             "Jacket pressure: Up to 10 bar",
@@ -92,7 +99,7 @@ const equipmentData = {
         title: "Fins Tube Heat Exchanger / Steam Air Heater / Hot Water Coils",
         description:
             "Finned tube heat exchangers for air heating applications. Ideal for HVAC systems, industrial air heating, and process air treatment.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: finnedHeatExchanger,
         specifications: [
             "Fin material: Aluminum, Copper",
             "Tube material: Copper, SS304",

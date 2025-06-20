@@ -5,30 +5,31 @@ import { ArrowRight, Shield, Award, Users } from 'lucide-react';
 const Hero = () => {
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=800&fit=crop&crop=center",
-      title: "Reliable Thermal",
-      subtitle: "Solutions",
-      description: "Leading provider of innovative thermal management systems for mission-critical applications."
+      image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1200&h=800&q=80",
+      title: "Reliable Thermocraft",
+      subtitle: "Process Engineering Experts",
+      description: "Precision-engineered pressure vessels, reactors, heat exchangers, and storage tanks — built for industrial excellence."
     },
     {
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=1200&h=800&fit=crop&crop=center",
-      title: "Industrial Heating",
-      subtitle: "Excellence",
-      description: "Advanced heating solutions engineered for industrial and commercial applications."
+      image: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&w=1200&h=800&q=80",
+      title: "Thermal Process Systems",
+      subtitle: "Built to Perform",
+      description: "End-to-end thermal and separation solutions customized for chemical, pharmaceutical, and petrochemical industries."
     },
     {
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=800&fit=crop&crop=center",
-      title: "Precision Temperature",
-      subtitle: "Control",
-      description: "Cutting-edge temperature control technologies for optimal performance and efficiency."
+      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&h=800&q=80",
+      title: "Smart Industrial Heating",
+      subtitle: "Safe. Efficient. Scalable.",
+      description: "Limpet coil vessels, re-boilers, and air heaters designed for consistent process temperature control."
     },
     {
-      image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?w=1200&h=800&fit=crop&crop=center",
-      title: "Smart Thermal",
-      subtitle: "Management",
-      description: "Intelligent systems that adapt to your thermal management needs automatically."
+      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&h=800&q=80",
+      title: "Pilot & R&D Units",
+      subtitle: "Scale-Up Ready",
+      description: "Modular pilot plants and lab-scale systems for experimentation, testing, and innovation in manufacturing processes."
     }
   ];
+
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);

@@ -7,117 +7,162 @@ import { Eye } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import { Card, CardContent } from "./ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
+import pressurevessel from '@/Assets/products/pressurevessel.jpg'
+import chemicalreactor from '@/Assets/products/chemicalreactor.jpg'
+import heatExchanger from '@/Assets/products/heatexchanger.png';
+import storageTank from '@/Assets/products/storagetank.jpg';       // Adjust the path as necessary
+import distillationColumn from '@/Assets/products/distillationcolumn.png'; // Adjust the path as necessary
+import reboiler from '@/Assets/products/reboiler.jpg';             // Adjust the path as necessary
+import limpetJacketed from '@/Assets/products/limpetcoil.png'; // Adjust the path as necessary
 
+import finnedHeatExchanger from '@/Assets/products/fineheat.jpg'; // Adjust the path as necessary
 const projects = [
     {
         id: 1,
-        title: "Agitated Thin Film Dryer",
-        category: "Drying Solutions",
-        image: "/products/ATFD.jpg",
-        description: "Advanced agitated thin film dryer for efficient drying of heat-sensitive materials with precise temperature control.",
+        title: "Pressure Vessels",
+        category: "Storage & Containment",
+        image: pressurevessel,
+        description: "Custom-engineered pressure vessels designed for high-pressure and corrosive applications with reliable performance.",
         specs: [
-            "Heating Area: 0.1 to 2 Sq.mt",
-            "Material: SS316/SS304/Hastelloy",
-            "Temperature: Up to 300°C"
+            "Design Pressure: Up to 100 bar",
+            "Material: SS316/SS304/Carbon Steel",
+            "Capacity: 100L to 100,000L"
         ],
         applications: [
             "Chemical Processing",
-            "Pharmaceutical",
-            "Food & Beverage"
+            "Oil & Gas",
+            "Pharmaceutical"
         ],
-        tags: ["Temperature Control", "Automation", "Vacuum System"]
+        tags: ["High Pressure", "Custom Design", "Corrosion Resistant"]
     },
     {
         id: 2,
-        title: "Wiped Film Evaporator",
-        category: "Evaporation",
-        image: "/products/WFE.jpg",
-        description: "High-performance wiped film evaporator for gentle processing of heat-sensitive products with minimal residence time.",
+        title: "Chemical Reactors",
+        category: "Reaction Systems",
+        image: chemicalreactor,
+        description: "Robust chemical reactors for various reaction types with options for agitation, temperature control, and pressure regulation.",
         specs: [
-            "Heating Area: 0.1 to 2 Sq.mt",
-            "Material: SS316/SS304/Hastelloy",
-            "Operating Pressure: Full Vacuum to 3 bar"
+            "Capacity: 50L to 50,000L",
+            "Material: SS316/SS304/Glass Lined",
+            "Temperature: Up to 300°C"
         ],
         applications: [
-            "Fine Chemicals",
             "Pharmaceuticals",
-            "Food Processing"
+            "Petrochemicals",
+            "Fine Chemicals"
         ],
-        tags: ["Vacuum System", "Heat Transfer", "Process Control"]
+        tags: ["Jacketed", "Agitator", "Temperature Control"]
     },
     {
         id: 3,
-        title: "Rising Film Evaporator",
-        category: "Evaporation",
-        image: "/products/RFE.jpg",
-        description: "Efficient rising film evaporator designed for continuous evaporation of liquids with natural circulation.",
+        title: "Heat Exchangers",
+        category: "Heat Transfer",
+        image: heatExchanger,
+        description: "Highly efficient heat exchangers including shell & tube, plate, and air-cooled models for industrial heat transfer applications.",
         specs: [
-            "Capacity: Up to 3000 kg/hr",
-            "Material: SS316/SS304",
-            "Steam Pressure: Up to 3 bar"
+            "Type: Shell & Tube / Plate / Finned",
+            "Material: SS316/SS304/Copper",
+            "Thermal Duty: Up to 500 kW"
         ],
         applications: [
-            "Chemical Industry",
-            "Food & Beverage",
-            "Water Treatment"
+            "HVAC",
+            "Power Plants",
+            "Chemical Industry"
         ],
-        tags: ["Steam Heating", "Continuous Process", "Automation"]
+        tags: ["Thermal Efficiency", "Compact Design", "Low Fouling"]
     },
     {
         id: 4,
-        title: "Short Path Distillation",
-        category: "Distillation",
-        image: "/products/SPD.jpg",
-        description: "Advanced short path distillation system for high-purity separation of heat-sensitive materials.",
+        title: "Storage Tanks",
+        category: "Storage & Containment",
+        image: storageTank,
+        description: "Durable storage tanks designed for atmospheric and low-pressure applications, customizable for various industries.",
         specs: [
-            "Evaporator Area: 0.1 to 1 Sq.mt",
-            "Operating Pressure: 0.001 to 1 mbar",
-            "Internal Condenser Design"
+            "Capacity: 500L to 100,000L",
+            "Material: SS316/SS304/MS",
+            "Configuration: Vertical/Horizontal"
         ],
         applications: [
-            "Fine Chemicals",
-            "Pharmaceuticals",
-            "Specialty Oils"
+            "Water Storage",
+            "Chemical Storage",
+            "Food Industry"
         ],
-        tags: ["High Vacuum", "Molecular Distillation", "Temperature Control"]
+        tags: ["Atmospheric", "Custom Size", "Corrosion Resistant"]
     },
     {
         id: 5,
-        title: "Falling Film Evaporator",
-        category: "Evaporation",
-        image: "/products/FFE.jpg",
-        description: "High-efficiency falling film evaporator for gentle concentration of heat-sensitive products.",
+        title: "Distillation Column",
+        category: "Separation Systems",
+        image: distillationColumn,
+        description: "High-efficiency distillation columns for separation and purification of chemical mixtures in continuous or batch modes.",
         specs: [
-            "Capacity: Custom designs available",
-            "Material: SS316/SS304/Special alloys",
-            "Multiple Effect Options"
+            "Height: Up to 30 meters",
+            "Material: SS316/SS304",
+            "Packing: Structured/Random/Tray"
         ],
         applications: [
-            "Food Processing",
-            "Chemical Industry",
+            "Petrochemical",
+            "Solvent Recovery",
             "Pharmaceutical"
         ],
-        tags: ["Energy Efficient", "Continuous Process", "Low Residence Time"]
+        tags: ["Separation", "High Purity", "Fractionation"]
     },
     {
         id: 6,
-        title: "Pilot Plant Units",
-        category: "Research & Development",
-        image: "/products/Pilot.jpg",
-        description: "Comprehensive pilot plant setups for process development and scale-up studies.",
+        title: "Re-boiler",
+        category: "Thermal Equipment",
+        image: reboiler,
+        description: "Reliable re-boilers designed to supply heat to distillation columns with consistent thermal efficiency and control.",
         specs: [
-            "Multiple Configurations",
-            "Fully Instrumented",
-            "Data Logging Capability"
+            "Type: Kettle / Thermosyphon / Forced Circulation",
+            "Material: SS316/SS304",
+            "Capacity: Custom Designs"
         ],
         applications: [
-            "Process Development",
-            "Research Institutes",
-            "Industrial R&D"
+            "Distillation",
+            "Refining",
+            "Chemical Recovery"
         ],
-        tags: ["Research", "Scale-up", "Process Optimization"]
+        tags: ["Heat Supply", "Column Integration", "Energy Efficient"]
+    },
+    {
+        id: 7,
+        title: "Limpet Coil & Jacketed Vessels",
+        category: "Reaction Systems",
+        image: limpetJacketed,
+        description: "Specialized vessels with limpet coil or jacketed options for controlled heating/cooling in chemical processing.",
+        specs: [
+            "Capacity: 100L to 50,000L",
+            "Material: SS316/SS304",
+            "Pressure: Up to 10 bar"
+        ],
+        applications: [
+            "Chemical Reaction",
+            "Heat Exchange",
+            "Pharmaceutical"
+        ],
+        tags: ["Thermal Jacket", "Pressure Rated", "Custom Agitation"]
+    },
+    {
+        id: 8,
+        title: "Finned Tube Heat Exchanger / Steam Air Heater / Hot Water Coils",
+        category: "Heat Transfer",
+        image: finnedHeatExchanger,
+        description: "Versatile finned tube heat exchangers and air heaters for efficient thermal management in air and liquid applications.",
+        specs: [
+            "Type: Finned Tube / Coil / Air Heater",
+            "Material: SS/Copper/Aluminium",
+            "Temperature: Up to 300°C"
+        ],
+        applications: [
+            "HVAC Systems",
+            "Drying Processes",
+            "Industrial Heating"
+        ],
+        tags: ["Air Heating", "Compact", "Energy Efficient"]
     }
 ];
+
 
 const categories = ["All", "Evaporation", "Distillation", "Drying Solutions", "Research & Development"];
 

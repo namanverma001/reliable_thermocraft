@@ -23,15 +23,15 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2 hover:text-blue-200 transition-colors">
                 <Phone size={14} />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9423927384</span>
               </div>
               <div className="flex items-center space-x-2 hover:text-blue-200 transition-colors">
                 <Mail size={14} />
-                <span>info@reliablethermocraft.com</span>
+                <span>works@reliablecrafts.com</span>
               </div>
             </div>
             <div className="text-sm opacity-90">
-              Professional Thermal Solutions Since 1995
+              Professional Thermal Solutions Since 2005
             </div>
           </div>
         </div>
@@ -139,14 +139,14 @@ const Header = () => {
               <button onClick={() => handleNavigation('/')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Home
               </button>
+              <button onClick={() => handleNavigation('/about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
+                About
+              </button>
               <button onClick={() => handleNavigation('/services')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Services
               </button>
               <button onClick={() => handleNavigation('/products')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Products
-              </button>
-              <button onClick={() => handleNavigation('/about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
-                About
               </button>
               <button onClick={() => handleNavigation('/contact')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Contact
