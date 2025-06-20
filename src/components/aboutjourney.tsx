@@ -1,7 +1,7 @@
 import { useState } from "react"
-import Image from "@/Assets/condenser.jpg"
+import Image from "@/Assets/team1.jpg"
 export default function OurJourney() {
-    const timelineYears = [2013, 2014, 2018, 2021, 2023]
+    const timelineYears = [2005, 2007, 2010, 2014, 2020, 2025]
 
     return (
         <div className="bg-gray-50 py-16 px-4 md:px-8">
@@ -13,7 +13,7 @@ export default function OurJourney() {
                             <h2 className="text-4xl md:text-5xl font-light text-gray-900">Our Journey</h2>
                             <h3 className="text-xl md:text-2xl font-medium text-gray-800">Beginning with Process Solutions</h3>
                             <p className="text-gray-600 text-lg leading-relaxed">
-                                Established in 2013, Process Solutions with designing, manufacturing with installation of process
+                                Established in 2005, Process solutions with designing, manufacturing with installation of process
                                 technologies and complete turnkey solutions.
                             </p>
                         </div>
