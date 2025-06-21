@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Award } from 'lucide-react';
@@ -62,6 +61,10 @@ const Header = () => {
             </Link>
             <Link to="/products" className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group py-2">
               Products
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+            <Link to="/projects" className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group py-2">
+              Projects
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group py-2">
@@ -139,14 +142,17 @@ const Header = () => {
               <button onClick={() => handleNavigation('/')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Home
               </button>
+              <button onClick={() => handleNavigation('/about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
+                About
+              </button>
               <button onClick={() => handleNavigation('/services')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Services
               </button>
               <button onClick={() => handleNavigation('/products')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Products
               </button>
-              <button onClick={() => handleNavigation('/about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
-                About
+              <button onClick={() => handleNavigation('/projects')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
+                Projects
               </button>
               <button onClick={() => handleNavigation('/contact')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Contact
