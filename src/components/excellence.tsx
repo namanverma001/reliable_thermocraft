@@ -2,8 +2,11 @@ import BgImage from '@/Assets/team1.jpg';
 import { Check, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function RDExcellenceCenter() {
+    const navigate = useNavigate();
+
     const capabilities = [
         "Lab-Scale Distillation Setup",
         "Thin Film Evaporation",
@@ -89,6 +92,7 @@ export default function RDExcellenceCenter() {
                                 <Button
                                     size="lg"
                                     className="group bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-6 flex items-center gap-2 transition-all duration-200 hover:shadow-lg h-auto"
+                                    onClick={() => navigate('/products')}
                                 >
                                     <span className="text-lg tracking-wide">EXPLORE</span>
                                     <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />

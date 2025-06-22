@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Target, Eye, Award, CheckCircle, ArrowRight } from "lucide-react"
-import brouchure from "../assets/Reliable Thermocraft Broucher.pdf"
+import BrochurePDF from "@/Assets/Reliable Thermocraft Broucher.pdf"
+
 export default function Component() {
     const [activeTab, setActiveTab] = useState("mission")
 
@@ -87,6 +88,15 @@ export default function Component() {
     }
 
     const currentContent = content[activeTab as keyof typeof content]
+
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = BrochurePDF;
+        link.setAttribute("download", "Reliable-Thermocraft-Broucher.pdf");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
@@ -208,14 +218,7 @@ export default function Component() {
                                     <h4 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Download Brochure</h4>
                                     <p className="text-slate-300 mb-3 sm:mb-4 text-sm sm:text-base">Get detailed information about our services</p>
                                     <button
-                                        onClick={() => {
-                                            const link = document.createElement('a');
-                                            link.href = brouchure;
-                                            link.download = 'Reliable Thermocraft Brochure.pdf';
-                                            document.body.appendChild(link);
-                                            link.click();
-                                            document.body.removeChild(link);
-                                        }}
+                                        onClick={handleDownload}
                                         className="inline-flex items-center space-x-2 bg-white text-slate-800 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors text-sm sm:text-base"
                                     >
                                         <span>Download Brochure</span>
