@@ -17,7 +17,7 @@ export default function SeparationTechVideo() {
     const handlePlayClick = () => {
         setIsVideoOpen(true);
     }; return (
-        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 overflow-hidden rounded-2xl shadow-2xl">
+        <div className="relative w-full h-[450px] md:h-[400px] lg:h-[500px] bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 overflow-hidden rounded-2xl shadow-2xl">
             {/* Background industrial image overlay with blur effect */}
             <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
 
@@ -94,13 +94,6 @@ export default function SeparationTechVideo() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                    <button
-                        onClick={() => setIsVideoOpen(false)}
-                        className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
-                        aria-label="Close video"
-                    >
-                        <X className="w-6 h-6" />
-                    </button>
                 </DialogContent>
             </Dialog>
         </div>

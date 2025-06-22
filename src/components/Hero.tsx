@@ -1,8 +1,9 @@
-
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Shield, Award, Users } from 'lucide-react';
-
+import { useNavigate } from 'react-router-dom';
+import broucher from "@/Assets/Reliable Thermocraft Broucher.pdf"
 const Hero = () => {
+  const navigate = useNavigate();
   const slides = [
     {
       image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1200&h=800&q=80",
@@ -105,11 +106,11 @@ const Hero = () => {
               ? 'opacity-0 transform translate-y-12'
               : 'opacity-100 transform translate-y-0'
               }`} style={{ transitionDelay: '0.5s' }}>
-              <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 flex items-center justify-center group hover:scale-105 hover:shadow-lg">
+              <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 flex items-center justify-center group hover:scale-105 hover:shadow-lg" onClick={() => navigate('/services')}>
                 Explore Services
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
               </button>
-              <button className="border-2 border-blue-300 text-blue-100 px-8 py-4 rounded-lg font-semibold hover:bg-blue-300 hover:text-blue-900 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <button className="border-2 border-blue-300 text-blue-100 px-8 py-4 rounded-lg font-semibold hover:bg-blue-300 hover:text-blue-900 transition-all duration-300 hover:scale-105 hover:shadow-lg" onClick={() => window.open(broucher, '_blank')}>
                 Download Catalog
               </button>
             </div>
