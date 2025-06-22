@@ -1,13 +1,14 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Building2, Globe } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import emailjs from "@emailjs/browser"
 
 const ModernContact = () => {
   const [formData, setFormData] = useState({
@@ -17,9 +18,11 @@ const ModernContact = () => {
     phone: "",
     service: "",
     message: "",
+    title: "",
   })
 
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const form = useRef<HTMLFormElement>(null)
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -37,9 +40,34 @@ const ModernContact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
-    setIsSubmitted(true)
-    setTimeout(() => setIsSubmitted(false), 3000)
+    if (!form.current) return
+
+    // TODO: Replace with your EmailJS credentials
+    emailjs
+      .sendForm(
+        "service_222wvh6",    // <-- Replace with your EmailJS service ID
+        "template_fie0vsj",   // <-- Replace with your EmailJS template ID
+        form.current,
+        "Mc7Q1uphsU8hnERdB"     // <-- Replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          setIsSubmitted(true)
+          setTimeout(() => setIsSubmitted(false), 3000)
+          setFormData({
+            name: "",
+            email: "",
+            company: "",
+            phone: "",
+            service: "",
+            message: "",
+            title: "",
+          })
+        },
+        (error) => {
+          alert("Failed to send message. Please try again later.")
+        }
+      )
   }
 
   const contactInfo = [
@@ -146,7 +174,7 @@ const ModernContact = () => {
                   <h2 className="text-2xl font-bold text-gray-900">Request a Quote</h2>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -213,6 +241,21 @@ const ModernContact = () => {
                     </div>
                   </div>
 
+                  <div className="space-y-2">
+                    <label htmlFor="title" className="block text-sm font-medium text-gray-700">
+                      Subject *
+                    </label>
+                    <Input
+                      type="text"
+                      id="title"
+                      name="title"
+                      value={formData.title}
+                      onChange={handleInputChange}
+                      className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
+                      placeholder="Subject of your message"
+                      required
+                    />
+                  </div>
 
                   <div className="space-y-2">
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700">
