@@ -1,9 +1,10 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Award } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import Logo from '@/Assets/logo.jpg'; // Adjust the path as necessary
+import certificate from '@/Assets/certificate.jpg';
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCertificateOpen, setIsCertificateOpen] = useState(false);
@@ -77,47 +78,13 @@ const Header = () => {
                   <span>Certificate</span>
                 </button>
               </DialogTrigger>
-              <DialogContent className="max-w-2xl">
-                <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold text-center text-blue-800 mb-4">
-                    ISO 9001:2015 Quality Management Certificate
-                  </DialogTitle>
-                </DialogHeader>
-                <div className="space-y-6">
-                  {/* Certificate Display */}
-                  <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-lg p-8 text-center">
-                    <div className="mb-6">
-                      <Award className="mx-auto text-blue-600 mb-4" size={48} />
-                      <h3 className="text-xl font-bold text-blue-800 mb-2">CERTIFICATE OF COMPLIANCE</h3>
-                      <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-4"></div>
-                    </div>
-
-                    <div className="space-y-4 text-gray-700">
-                      <p className="text-lg font-semibold">This is to certify that</p>
-                      <p className="text-2xl font-bold text-blue-800">Reliable Thermocraft Inc.</p>
-                      <p className="text-base">has successfully implemented and maintains a Quality Management System which fulfills the requirements of</p>
-                      <p className="text-lg font-bold text-blue-700">ISO 9001:2015</p>
-                      <p className="text-base">for the design, manufacture, and installation of thermal management solutions</p>
-
-                      <div className="flex justify-between items-center mt-8 pt-6 border-t border-blue-200">
-                        <div>
-                          <p className="text-sm font-medium">Certificate No:</p>
-                          <p className="text-blue-600 font-bold">TC-ISO-2024-001</p>
-                        </div>
-                        <div>
-                          <p className="text-sm font-medium">Valid Until:</p>
-                          <p className="text-blue-600 font-bold">December 2027</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Additional Info */}
-                  <div className="bg-blue-50 rounded-lg p-4">
-                    <p className="text-sm text-gray-600 text-center">
-                      This certificate demonstrates our commitment to quality excellence and continuous improvement in thermal management solutions.
-                    </p>
-                  </div>
+              <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto w-[95vw] md:w-auto left-[2.5%] md:left-[50%] translate-x-0 md:translate-x-[-50%] p-0">
+                <div className="relative">
+                  <img
+                    src={certificate}
+                    alt="ISO 9001:2015 Quality Management Certificate"
+                    className="w-full h-auto object-contain max-h-[90vh]"
+                  />
                 </div>
               </DialogContent>
             </Dialog>
@@ -138,9 +105,6 @@ const Header = () => {
             <div className="flex flex-col space-y-3">
               <button onClick={() => handleNavigation('/')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Home
-                <button onClick={() => handleNavigation('/about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
-                  About
-                </button>
               </button>
               <button onClick={() => handleNavigation('/about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 About

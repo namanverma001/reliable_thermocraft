@@ -275,8 +275,8 @@ const ProjectShowcase = () => {
                                             </Card>
                                         </motion.div>
                                     </DialogTrigger>
-                                    <DialogContent className="max-w-3xl">
-                                        <div className="grid md:grid-cols-2 gap-6">
+                                    <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto w-[95vw] md:w-auto left-[2.5%] md:left-[50%] translate-x-0 md:translate-x-[-50%]">
+                                        <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                                             <div className="aspect-[4/3] relative overflow-hidden rounded-lg">
                                                 <img
                                                     src={project.image}
@@ -284,15 +284,17 @@ const ProjectShowcase = () => {
                                                     className="w-full h-full object-cover"
                                                 />
                                             </div>
-                                            <div>
-                                                <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-                                                <Badge className="mb-4" variant="secondary">{project.category}</Badge>
-                                                <p className="text-gray-600 mb-6">{project.description}</p>
+                                            <div className="space-y-4 md:space-y-6">
+                                                <div>
+                                                    <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">{project.title}</h3>
+                                                    <Badge className="mb-2 md:mb-4" variant="secondary">{project.category}</Badge>
+                                                    <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">{project.description}</p>
+                                                </div>
 
-                                                <div className="space-y-6">
+                                                <div className="space-y-4 md:space-y-6">
                                                     <div>
-                                                        <h4 className="text-lg font-semibold mb-2">Specifications</h4>
-                                                        <ul className="list-disc list-inside space-y-1 text-gray-600">
+                                                        <h4 className="text-base md:text-lg font-semibold mb-2">Specifications</h4>
+                                                        <ul className="list-disc list-inside space-y-1 text-gray-600 text-sm md:text-base">
                                                             {project.specs.map((spec, index) => (
                                                                 <li key={index}>{spec}</li>
                                                             ))}
@@ -300,8 +302,8 @@ const ProjectShowcase = () => {
                                                     </div>
 
                                                     <div>
-                                                        <h4 className="text-lg font-semibold mb-2">Applications</h4>
-                                                        <ul className="list-disc list-inside space-y-1 text-gray-600">
+                                                        <h4 className="text-base md:text-lg font-semibold mb-2">Applications</h4>
+                                                        <ul className="list-disc list-inside space-y-1 text-gray-600 text-sm md:text-base">
                                                             {project.applications.map((app, index) => (
                                                                 <li key={index}>{app}</li>
                                                             ))}
