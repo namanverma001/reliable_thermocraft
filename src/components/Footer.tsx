@@ -50,25 +50,32 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">+91 9423927384</p>
-                  <p className="text-gray-300">+91 8087027384</p>
+                  <a href="tel:+919423927384" className="text-gray-300 hover:text-blue-400 block">+91 9423927384</a>
+                  <a href="tel:+918087027384" className="text-gray-300 hover:text-blue-400 block">+91 8087027384</a>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">works@reliablecrafts.com</p>
-                  <p className="text-gray-300">sales@reliablecrafts.com</p>
+                  <a href="mailto:works@reliablecrafts.com" className="text-gray-300 hover:text-blue-400 block">works@reliablecrafts.com</a>
+                  <a href="mailto:sales@reliablecrafts.com" className="text-gray-300 hover:text-blue-400 block">sales@reliablecrafts.com</a>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">S.No.22/1/1/B, Near Agra-Bombay Road</p>
-                  <p className="text-gray-300">Behind The Furniture Stop, Opp. CNG Pump</p>
-                  <p className="text-gray-300">Vilholi, Nashik, Maharashtra 422010</p>
+                  <a
+                    href="https://www.google.com/maps/place/Reliable+Thermocraft/@19.9288572,73.7316995,17z"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-blue-400 block"
+                  >
+                    S.No.22/1/1/B, Near Agra-Bombay Road<br />
+                    Behind The Furniture Stop, Opp. CNG Pump<br />
+                    Vilholi, Nashik, Maharashtra 422010
+                  </a>
                 </div>
               </div>
             </div>

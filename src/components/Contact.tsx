@@ -93,16 +93,7 @@ const ModernContact = () => {
       ],
       color: "bg-blue-600",
     },
-    {
-      icon: Clock,
-      title: "Business Hours",
-      details: [
-        "Monday - Friday: 8:00 AM - 6:00 PM",
-        "Saturday: 9:00 AM - 3:00 PM",
-        "24/7 Emergency Support Available"
-      ],
-      color: "bg-blue-600",
-    }
+
   ];
 
 
@@ -151,10 +142,30 @@ const ModernContact = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="font-semibold mb-2 text-gray-900">{info.title}</h3>
-                      {info.details.map((detail, idx) => (
+                      {info.title === "Phone" && info.details.map((detail, idx) => (
                         <p key={idx} className="text-gray-600 text-sm leading-relaxed">
-                          {detail}
+                          <a href={`tel:${detail.replace(/\s+/g, '')}`} className="hover:underline text-blue-600">{detail}</a>
                         </p>
+                      ))}
+                      {info.title === "Email" && info.details.map((detail, idx) => (
+                        <p key={idx} className="text-gray-600 text-sm leading-relaxed">
+                          <a href={`mailto:${detail}`} className="hover:underline text-blue-600">{detail}</a>
+                        </p>
+                      ))}
+                      {info.title === "Address" && (
+                        <a
+                          href="https://www.google.com/maps/place/Reliable+Thermocraft/@19.9288572,73.7316995,17z"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline text-blue-600 block"
+                        >
+                          {info.details.map((detail, idx) => (
+                            <span key={idx} className="block">{detail}</span>
+                          ))}
+                        </a>
+                      )}
+                      {info.title === "Business Hours" && info.details.map((detail, idx) => (
+                        <p key={idx} className="text-gray-600 text-sm leading-relaxed">{detail}</p>
                       ))}
                     </div>
                   </div>
