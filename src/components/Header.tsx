@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Award } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import Logo from '@/Assets/logo.jpg'; // Adjust the path as necessary
+import certificate from '@/Assets/certificate.jpg';
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCertificateOpen, setIsCertificateOpen] = useState(false);
@@ -22,15 +24,15 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2 hover:text-blue-200 transition-colors">
                 <Phone size={14} />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9423927384</span>
               </div>
               <div className="flex items-center space-x-2 hover:text-blue-200 transition-colors">
                 <Mail size={14} />
-                <span>info@reliablethermocraft.com</span>
+                <span>works@reliablecrafts.com</span>
               </div>
             </div>
             <div className="text-sm opacity-90">
-              Professional Thermal Solutions Since 1995
+              Professional Thermal Solutions Since 2005
             </div>
           </div>
         </div>
@@ -80,47 +82,13 @@ const Header = () => {
                   <span>Certificate</span>
                 </button>
               </DialogTrigger>
-              <DialogContent className="max-w-2xl">
-                <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold text-center text-blue-800 mb-4">
-                    ISO 9001:2015 Quality Management Certificate
-                  </DialogTitle>
-                </DialogHeader>
-                <div className="space-y-6">
-                  {/* Certificate Display */}
-                  <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-lg p-8 text-center">
-                    <div className="mb-6">
-                      <Award className="mx-auto text-blue-600 mb-4" size={48} />
-                      <h3 className="text-xl font-bold text-blue-800 mb-2">CERTIFICATE OF COMPLIANCE</h3>
-                      <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-4"></div>
-                    </div>
-
-                    <div className="space-y-4 text-gray-700">
-                      <p className="text-lg font-semibold">This is to certify that</p>
-                      <p className="text-2xl font-bold text-blue-800">Reliable Thermocraft Inc.</p>
-                      <p className="text-base">has successfully implemented and maintains a Quality Management System which fulfills the requirements of</p>
-                      <p className="text-lg font-bold text-blue-700">ISO 9001:2015</p>
-                      <p className="text-base">for the design, manufacture, and installation of thermal management solutions</p>
-
-                      <div className="flex justify-between items-center mt-8 pt-6 border-t border-blue-200">
-                        <div>
-                          <p className="text-sm font-medium">Certificate No:</p>
-                          <p className="text-blue-600 font-bold">TC-ISO-2024-001</p>
-                        </div>
-                        <div>
-                          <p className="text-sm font-medium">Valid Until:</p>
-                          <p className="text-blue-600 font-bold">December 2027</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Additional Info */}
-                  <div className="bg-blue-50 rounded-lg p-4">
-                    <p className="text-sm text-gray-600 text-center">
-                      This certificate demonstrates our commitment to quality excellence and continuous improvement in thermal management solutions.
-                    </p>
-                  </div>
+              <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto w-[95vw] md:w-auto left-[2.5%] md:left-[50%] translate-x-0 md:translate-x-[-50%] p-0">
+                <div className="relative">
+                  <img
+                    src={certificate}
+                    alt="ISO 9001:2015 Quality Management Certificate"
+                    className="w-full h-auto object-contain max-h-[90vh]"
+                  />
                 </div>
               </DialogContent>
             </Dialog>

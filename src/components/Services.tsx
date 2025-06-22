@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
 import { Plus } from 'lucide-react';
-import condenser from '@/Assets/condenser.jpg';
+import condenser from '@/Assets/backservice.jpg';
 
 const services = [
   {

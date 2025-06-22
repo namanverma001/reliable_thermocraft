@@ -14,7 +14,7 @@ export default function Clients() {
                 const loadedClients = await Promise.all(
                     Array.from({ length: 35 }, async (_, i) => {
                         const imageNumber = i + 1
-                        const extensions = ['jpg', 'png', 'svg', 'gif', 'webp']
+                        const extensions = ['jpg', 'png', 'svg', 'gif', 'webp', 'jpeg']
 
                         for (const ext of extensions) {
                             try {
@@ -105,7 +105,7 @@ export default function Clients() {
 
     return (
         <section className="py-10 px-4 bg-white">
-            <p className="text-4xl sm:text-5xl font-bold text-center text-black mb-16 font-libre tracking-tighter">Our Clients</p>
+            <p className="text-4xl sm:text-5xl font-bold text-center text-black mb-16 font-libre tracking-tighter">Our Esteemed Clients</p>
             <div
                 className="max-w-[1920px] mx-auto relative"
                 onMouseEnter={() => setIsPaused(true)}

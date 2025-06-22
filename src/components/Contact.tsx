@@ -46,19 +46,23 @@ const ModernContact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 123-4568 (Emergency)"],
+      details: ["+91 9423927384", "+91 8087027384"],
       color: "bg-blue-600",
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@reliablethermocraft.com", "support@reliablethermocraft.com"],
+      details: ["works@reliablecrafts.com", "sales@reliablecrafts.com"],
       color: "bg-blue-600",
     },
     {
       icon: MapPin,
       title: "Address",
-      details: ["1234 Industrial Boulevard", "Manufacturing District, State 12345"],
+      details: [
+        "S.No.22/1/1/B, Near Agra-Bombay Road",
+        "Behind The Furniture Stop, Opp. CNG Pump",
+        "Vilholi Municipal Water Tank, Nashik, Maharashtra 422010, India"
+      ],
       color: "bg-blue-600",
     },
     {
@@ -67,11 +71,12 @@ const ModernContact = () => {
       details: [
         "Monday - Friday: 8:00 AM - 6:00 PM",
         "Saturday: 9:00 AM - 3:00 PM",
-        "24/7 Emergency Service Available",
+        "24/7 Emergency Support Available"
       ],
       color: "bg-blue-600",
-    },
-  ]
+    }
+  ];
+
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 relative overflow-hidden">
@@ -208,22 +213,6 @@ const ModernContact = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-gray-700">Service Interest</label>
-                    <Select onValueChange={handleSelectChange}>
-                      <SelectTrigger className="bg-slate-700/50 border-slate-600 text-white">
-                        <SelectValue placeholder="Select a service" />
-                      </SelectTrigger>
-                      <SelectContent className="bg-slate-800 border-slate-700">
-                        <SelectItem value="temperature-control">Temperature Control Systems</SelectItem>
-                        <SelectItem value="industrial-heating">Industrial Heating Solutions</SelectItem>
-                        <SelectItem value="installation">Installation & Maintenance</SelectItem>
-                        <SelectItem value="safety-compliance">Safety & Compliance</SelectItem>
-                        <SelectItem value="energy-management">Energy Management</SelectItem>
-                        <SelectItem value="custom-engineering">Custom Engineering</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
 
                   <div className="space-y-2">
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700">
