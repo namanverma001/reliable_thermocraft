@@ -2,6 +2,7 @@ import React from 'react';
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import Services from './Services';
 import logo from '@/Assets/logo.jpg'
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
@@ -33,12 +34,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-blue-400">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="/home" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-              <li><a href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/products" className="text-gray-300 hover:text-white transition-colors">Products and services</a></li>
-              {/* <li><a href="/services" className="text-gray-300 hover:text-white transition-colors">Services</a></li> */}
-              <li><a href="/projects" className="text-gray-300 hover:text-white transition-colors">Projects</a></li>
-              <li><a href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+              <li><Link to="/home" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/products" className="text-gray-300 hover:text-white transition-colors">Products and services</Link></li>
+              {/* <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li> */}
+              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Projects</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
