@@ -2,40 +2,32 @@ import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import { Card, CardContent } from "./ui/card";
 import { motion } from "framer-motion";
-import { Star, Quote } from 'lucide-react';
+import { Quote } from 'lucide-react';
 
 const testimonials = [
     {
         id: 1,
-        name: "John Smith",
-        position: "Operations Director",
-        company: "Global Manufacturing Co.",
-        content: "Reliable Thermocraft's reactor systems have significantly improved our production efficiency. Their expertise in thermal management is unmatched.",
-        rating: 5
+        name: "Megi Agro Chem Ltd.",
+        company: "",
+        content: "Reliable Thermocrafts successfully executed process design, equipment supply, and complete plant fabrication for our 30 KL/Day distillery project. Their work quality and engineering services were excellent and met our full satisfaction. We confidently recommend them for future projects."
     },
     {
         id: 2,
-        name: "Sarah Johnson",
-        position: "Chief Engineer",
-        company: "Industrial Solutions Ltd",
-        content: "The technical support team is exceptional. They've helped us optimize our thermal processes and reduce energy consumption by 30%.",
-        rating: 5
+        name: "Sumangalam Formulations Pvt. Ltd.",
+        company: "",
+        content: "We thank Reliable Thermocrafts for their quality-conscious approach, timely execution, and strong technical support in supplying process equipment for our formulation projects. Their commitment and service have been truly commendable."
     },
     {
         id: 3,
-        name: "Michael Chen",
-        position: "Plant Manager",
-        company: "Advanced Materials Corp",
-        content: "Their custom engineering solutions perfectly addressed our unique requirements. The quality and reliability of their systems are outstanding.",
-        rating: 5
+        name: "Nirmal Industrial Controls Pvt. Ltd.",
+        company: "",
+        content: "We sincerely thank Reliable Thermocrafts for successfully completing the heater fabrication job (GJ927) within just 4 weeks, meeting all our requirements. We also appreciate their teamwork and coordination with our QA team."
     },
     {
         id: 4,
-        name: "Emma Davis",
-        position: "Technical Director",
-        company: "Precision Industries",
-        content: "The integration of their thermal management systems was seamless. Their attention to detail and professional approach sets them apart.",
-        rating: 5
+        name: "Catapharma Chemicals Pvt. Ltd.",
+        company: "",
+        content: "We thank Reliable Thermocrafts for consistently supplying high-quality stainless steel reactors and heat exchangers that deliver excellent performance. Their contribution has supported our ongoing success, and we value our continued association."
     }
 ];
 
@@ -64,16 +56,9 @@ const Testimonials = () => {
                                     <Card className="relative bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
                                         <CardContent className="p-6">
                                             <Quote className="absolute top-6 right-6 w-8 h-8 text-blue-100" />
-                                            <div className="flex items-center space-x-1 mb-4">
-                                                {[...Array(testimonial.rating)].map((_, i) => (
-                                                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                                                ))}
-                                            </div>
                                             <p className="text-gray-700 mb-6">{testimonial.content}</p>
                                             <div className="border-t pt-4">
                                                 <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                                                <p className="text-sm text-gray-600">{testimonial.position}</p>
-                                                <p className="text-sm text-blue-500">{testimonial.company}</p>
                                             </div>
                                         </CardContent>
                                     </Card>
