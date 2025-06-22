@@ -21,6 +21,23 @@ import {
   Container,
   X,
   Eye,
+  Wrench,
+  Shield,
+  Clock,
+  Users,
+  Cog,
+  HeartHandshake,
+  TrendingUp,
+  Award,
+  Layers,
+  FlaskConical,
+  Waves,
+  Database,
+  ChevronsUpDown,
+  Heater,
+  Blend,
+  Grid,
+  Box
 } from "lucide-react"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
@@ -28,12 +45,12 @@ import { motion } from "framer-motion"
 import pressurevessel from '@/Assets/products/pressurevessel.jpg'
 import chemicalreactor from '@/Assets/products/chemicalreactor.jpg'
 import heatExchanger from '@/Assets/products/heatexchanger.png';
-import storageTank from '@/Assets/products/storagetank.jpg';       // Adjust the path as necessary
-import distillationColumn from '@/Assets/products/distillationcolumn.png'; // Adjust the path as necessary
-import reboiler from '@/Assets/products/reboiler.jpg';             // Adjust the path as necessary
-import limpetJacketed from '@/Assets/products/limpetcoil.png'; // Adjust the path as necessary
-
+import storageTank from '@/Assets/products/storagetank.jpg';
+import distillationColumn from '@/Assets/products/distillationcolumn.png';
+import reboiler from '@/Assets/products/reboiler.jpg';
+import limpetJacketed from '@/Assets/products/limpetcoil.png';
 import finnedHeatExchanger from '@/Assets/products/fineheat.jpg';
+
 type Product = {
   id: number
   title: string
@@ -45,6 +62,87 @@ type Product = {
   gallery: string[]
   features: string[]
 }
+
+interface Service {
+  id: number
+  title: string
+  description: string
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
+  features: string[]
+}
+
+const services: Service[] = [
+  {
+    id: 1,
+    title: "Pressure Vessels",
+    description: "Custom-engineered vessels for high-pressure applications with optimized design for your specific operating conditions and material requirements.",
+    icon: Layers,
+    features: ["High-Pressure Design", "Custom Materials", "Optimized for Operating Conditions", "ASME/PED Compliance"]
+  },
+  {
+    id: 2,
+    title: "Chemical Reactors",
+    description: "Application-specific reactor designs with custom internals, agitation systems, and heat transfer solutions for enhanced process efficiency.",
+    icon: FlaskConical,
+    features: ["Custom Internals", "Advanced Agitation Systems", "Integrated Heat Transfer", "Process-Specific Design"]
+  },
+  {
+    id: 3,
+    title: "Heat Exchangers",
+    description: "Shell & tube, plate type, and air-cooled configurations optimized for your thermal duty requirements and fouling considerations.",
+    icon: Waves,
+    features: ["Shell & Tube", "Plate & Frame", "Air-Cooled", "Optimized Thermal Duty"]
+  },
+  {
+    id: 4,
+    title: "Storage Tanks",
+    description: "Atmospheric and low-pressure storage solutions with corrosion-resistant materials and custom nozzle configurations per process needs.",
+    icon: Database,
+    features: ["Atmospheric & Low-Pressure", "Corrosion-Resistant Materials", "Custom Nozzles", "API 650/620 Standards"]
+  },
+  {
+    id: 5,
+    title: "Distillation Columns",
+    description: "Tray and packed column designs with optimized internals for your specific separation requirements and throughput capacity.",
+    icon: ChevronsUpDown,
+    features: ["Tray & Packed Columns", "Optimized Internals", "High Throughput Capacity", "Specific Separation Focus"]
+  },
+  {
+    id: 6,
+    title: "Re-boilers",
+    description: "Thermosiphon, forced circulation, and kettle-type configurations designed for your column's heat duty and operating parameters.",
+    icon: Heater,
+    features: ["Thermosiphon Type", "Forced Circulation", "Kettle Type", "Custom Heat Duty Design"]
+  },
+  {
+    id: 7,
+    title: "Limpet Coil & Jacketed Vessels",
+    description: "Heat transfer solutions for temperature-sensitive processes with customized coil configurations and jacket designs for optimal thermal performance.",
+    icon: Thermometer,
+    features: ["Custom Coil/Jacket Design", "Precise Temperature Control", "Optimal Thermal Performance", "For Sensitive Processes"]
+  },
+  {
+    id: 8,
+    title: "Mixing Tanks",
+    description: "Heavy-duty agitation systems for high-viscosity applications with specialized impeller designs for ETP and chemical processing requirements.",
+    icon: Blend,
+    features: ["Heavy-Duty Agitation", "High-Viscosity Solutions", "Specialized Impellers", "ETP & Chemical Processing"]
+  },
+  {
+    id: 9,
+    title: "Fine Tube Heat Exchangers",
+    description: "Compact heat transfer solutions with enhanced surface area design for high thermal efficiency in limited space applications, ideal for precise temperature control requirements.",
+    icon: Grid,
+    features: ["Compact Design", "Enhanced Surface Area", "High Thermal Efficiency", "Steam, Air & Water Coils"]
+  },
+  {
+    id: 10,
+    title: "Process Skids",
+    description: "Complete pre-assembled process units with integrated piping, pumps, valves, instrumentation, and automation systems designed for rapid deployment and commissioning.",
+    icon: Box,
+    features: ["Pre-Assembled Units", "Integrated Systems", "Rapid Deployment", "Turnkey Solutions"]
+  }
+]
 
 const products: Product[] = [
   {
@@ -137,7 +235,6 @@ const products: Product[] = [
   }
 ];
 
-
 const categories = [
   { name: "Heat Exchangers", icon: Thermometer },
   { name: "Reactors", icon: Settings },
@@ -145,7 +242,7 @@ const categories = [
   { name: "Pressure Vessels", icon: Gauge },
 ]
 
-export default function Products() {
+export default function ProductsServices() {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
 
@@ -157,7 +254,6 @@ export default function Products() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
       <Header />
 
-      {/* Products List View */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -180,7 +276,7 @@ export default function Products() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-white via-blue-200 to-indigo-200 bg-clip-text text-transparent leading-tight"
               >
-                Industrial Equipment Solutions
+                Products & Services
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -188,8 +284,8 @@ export default function Products() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="text-lg md:text-2xl mb-8 md:mb-12 text-blue-100 max-w-3xl mx-auto leading-relaxed"
               >
-                Precision-engineered industrial equipment for chemical processing, heat transfer,
-                storage applications, and advanced manufacturing processes.
+                Comprehensive industrial solutions from precision-engineered equipment to expert services
+                for chemical processing, heat transfer, and manufacturing excellence.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -197,7 +293,7 @@ export default function Products() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="flex flex-wrap justify-center gap-3 md:gap-4"
               >
-                {["ISO Certified", "Custom Solutions", "Global Support"].map((badge, index) => (
+                {["ISO Certified", "Custom Solutions", "Global Support", "24/7 Service"].map((badge, index) => (
                   <motion.div
                     key={badge}
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -214,13 +310,74 @@ export default function Products() {
           </div>
         </motion.section>
 
-        {/* Categories Section */}
+        {/* Services Section */}
         <motion.section
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="py-12 md:py-20 bg-white relative"
+        >
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12 md:mb-16"
+            >
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6">Our Services</h2>
+              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                Comprehensive support services to maximize the performance and lifespan of your industrial equipment
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {services.map((service, index) => (
+                <motion.div
+                  key={service.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <Card className="h-full hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:scale-105 bg-gradient-to-br from-white to-blue-50/30 border-0 shadow-lg">
+                    <CardHeader className="text-center pb-4">
+                      <motion.div
+                        whileHover={{ scale: 1.1, rotate: 5 }}
+                        className="mx-auto w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mb-4 md:mb-6 shadow-lg"
+                      >
+                        <service.icon className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                      </motion.div>
+                      <CardTitle className="text-xl md:text-2xl text-gray-900 mb-2">{service.title}</CardTitle>
+                      <CardDescription className="text-sm md:text-base text-gray-600">
+                        {service.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <div className="space-y-2">
+                        {service.features.map((feature, idx) => (
+                          <div key={idx} className="flex items-center space-x-2">
+                            <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
+                            <span className="text-sm md:text-base text-gray-700">{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Categories Section */}
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="py-12 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative"
         >
           <div className="container mx-auto px-4">
             <motion.div
@@ -263,7 +420,6 @@ export default function Products() {
                           }`} />
                       </motion.div>
                       <CardTitle className="text-xl md:text-2xl text-gray-900">{category.name}</CardTitle>
-
                     </CardHeader>
                   </Card>
                 </motion.div>
@@ -278,7 +434,7 @@ export default function Products() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="py-12 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50"
+          className="py-12 md:py-20 bg-white"
         >
           <div className="container mx-auto px-4">
             <motion.div
