@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Target, Eye, Award, CheckCircle, ArrowRight } from "lucide-react"
-
+import brouchure from "../assets/Reliable Thermocraft Broucher.pdf"
 export default function Component() {
     const [activeTab, setActiveTab] = useState("mission")
 
@@ -35,11 +35,6 @@ export default function Component() {
                     description: "Committed to meeting project deadlines without compromising quality",
                 },
             ],
-            stats: [
-                { number: "25+", label: "Years Experience" },
-                { number: "500+", label: "Projects Completed" },
-                { number: "98%", label: "Client Satisfaction" },
-            ],
         },
         vision: {
             title: "Our Vision",
@@ -64,11 +59,6 @@ export default function Component() {
                     description: "Creating sustainable value for all stakeholders and communities",
                 },
             ],
-            stats: [
-                { number: "15+", label: "Countries Served" },
-                { number: "50+", label: "Patents Filed" },
-                { number: "100+", label: "Team Members" },
-            ],
         },
         values: {
             title: "Core Values",
@@ -92,11 +82,6 @@ export default function Component() {
                     title: "Sustainable Growth",
                     description: "Building for the future while respecting environmental responsibilities",
                 },
-            ],
-            stats: [
-                { number: "Zero", label: "Compromise on Quality" },
-                { number: "24/7", label: "Customer Support" },
-                { number: "100%", label: "Commitment" },
             ],
         },
     }
@@ -206,31 +191,13 @@ export default function Component() {
                                 </div>
                             </motion.div>
 
-                            {/* Statistics Card */}
+                            {/* Download Brochure Card */}
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.4 }}
-                                className="space-y-4 sm:space-y-6 order-2"
+                                className="order-2"
                             >
-                                <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8">
-                                    <h3 className="text-xl sm:text-2xl font-semibold text-slate-800 mb-4 sm:mb-6">Key Metrics</h3>
-                                    <div className="grid grid-cols-3 sm:grid-cols-1 gap-3 sm:gap-6">
-                                        {currentContent.stats.map((stat, index) => (
-                                            <motion.div
-                                                key={stat.label}
-                                                initial={{ opacity: 0, scale: 0.8 }}
-                                                animate={{ opacity: 1, scale: 1 }}
-                                                transition={{ delay: 0.6 + index * 0.1 }}
-                                                className="text-center p-3 sm:p-4 bg-gradient-to-br from-blue-50 to-slate-50 rounded-lg"
-                                            >
-                                                <div className="text-xl sm:text-3xl font-bold text-slate-800 mb-1 sm:mb-2">{stat.number}</div>
-                                                <div className="text-slate-600 font-medium text-xs sm:text-base">{stat.label}</div>
-                                            </motion.div>
-                                        ))}
-                                    </div>
-                                </div>
-
                                 {/* Call to Action */}
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }}
@@ -238,10 +205,20 @@ export default function Component() {
                                     transition={{ delay: 0.8 }}
                                     className="bg-slate-800 text-white rounded-xl p-4 sm:p-6 text-center"
                                 >
-                                    <h4 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Ready to Partner?</h4>
-                                    <p className="text-slate-300 mb-3 sm:mb-4 text-sm sm:text-base">Let's discuss your next project</p>
-                                    <button className="inline-flex items-center space-x-2 bg-white text-slate-800 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors text-sm sm:text-base">
-                                        <span>Contact Us</span>
+                                    <h4 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Download Brochure</h4>
+                                    <p className="text-slate-300 mb-3 sm:mb-4 text-sm sm:text-base">Get detailed information about our services</p>
+                                    <button
+                                        onClick={() => {
+                                            const link = document.createElement('a');
+                                            link.href = brouchure;
+                                            link.download = 'Reliable Thermocraft Brochure.pdf';
+                                            document.body.appendChild(link);
+                                            link.click();
+                                            document.body.removeChild(link);
+                                        }}
+                                        className="inline-flex items-center space-x-2 bg-white text-slate-800 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors text-sm sm:text-base"
+                                    >
+                                        <span>Download Brochure</span>
                                         <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                                     </button>
                                 </motion.div>

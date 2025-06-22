@@ -4,6 +4,7 @@ import { Thermometer, Cpu, Gauge, Shield, Lightbulb, Cog, ArrowRight } from 'luc
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const technologies = [
     {
@@ -39,6 +40,8 @@ const technologies = [
 ];
 
 const TechnologyStack = () => {
+    const navigate = useNavigate();
+
     return (
         <section className="py-24 relative overflow-hidden bg-white">
             {/* Background Pattern */}
@@ -68,7 +71,11 @@ const TechnologyStack = () => {
                                 <p className="text-gray-600 mb-4">
                                     Our technology stack represents the culmination of years of research and development in thermal processing solutions.
                                 </p>
-                                <Button variant="default" className="group">
+                                <Button
+                                    variant="default"
+                                    className="group"
+                                    onClick={() => navigate('/about')}
+                                >
                                     Learn More
                                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                 </Button>
@@ -94,12 +101,7 @@ const TechnologyStack = () => {
                                         </div>
                                         <h3 className="text-xl font-semibold text-gray-900 mb-3">{tech.title}</h3>
                                         <p className="text-gray-600 leading-relaxed mb-4">{tech.description}</p>
-                                        <div className="pt-2 mt-auto">
-                                            <Button variant="ghost" className="group/btn p-0 h-auto hover:bg-transparent">
-                                                Explore
-                                                <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                                            </Button>
-                                        </div>
+
                                     </div>
                                 </Card>
                             </motion.div>

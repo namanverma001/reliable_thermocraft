@@ -57,12 +57,12 @@ const Header = () => {
               About
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link to="/services" className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group py-2">
+            {/* <Link to="/services" className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group py-2">
               Services
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
+            </Link> */}
             <Link to="/products" className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group py-2">
-              Products
+              Products and Services
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link to="/projects" className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group py-2">
@@ -113,11 +113,11 @@ const Header = () => {
               <button onClick={() => handleNavigation('/about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 About
               </button>
-              <button onClick={() => handleNavigation('/services')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
+              {/* <button onClick={() => handleNavigation('/services')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Services
-              </button>
+              </button> */}
               <button onClick={() => handleNavigation('/products')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
-                Products
+                Products and Services
               </button>
               <button onClick={() => handleNavigation('/projects')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 text-left rounded-lg hover:bg-blue-50">
                 Projects

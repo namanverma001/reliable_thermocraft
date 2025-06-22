@@ -1,4 +1,3 @@
-
 import React from "react"
 
 import { useState, useRef, useEffect } from "react"
@@ -8,53 +7,45 @@ import { ArrowRight, Factory, TestTubes, Pill, Fuel, Leaf, Building, Play, Pause
 
 const industries = [
     {
-        icon: Factory,
-        title: "Chemical Industry",
-        description: "Integrated systems for efficient chemical manufacturing and processing.",
-        features: ["Reactors", "Distillation Units", "Heat Exchangers"],
-        gradient: "from-blue-400 via-blue-600 to-slate-600",
+        icon: Fuel,
+        title: "Oil and Gas Industry",
+        description: "Durable and reliable equipment for upstream, midstream, and downstream operations.",
+        features: ["Pressure Vessels", "Separators", "Glycol Dehydration Units"],
+        gradient: "from-orange-500 via-amber-500 to-yellow-600",
         number: "01",
     },
     {
-        icon: Pill,
-        title: "Pharmaceutical",
-        description: "Clean and precise process systems for pharma production.",
-        features: ["Sterile Vessels", "Wiped Film Evaporators", "ATFD Systems"],
-        gradient: "from-slate-400 via-slate-600 to-blue-600",
+        icon: TestTubes,
+        title: "Chemical and Pharma Industry",
+        description: "High-purity systems for chemical synthesis and pharmaceutical manufacturing.",
+        features: ["Glass-Lined Reactors", "Sterile Vessels", "Wiped Film Evaporators"],
+        gradient: "from-cyan-500 via-teal-500 to-emerald-600",
         number: "02",
     },
     {
-        icon: Leaf,
-        title: "Food & Beverage",
-        description: "Hygienic thermal solutions for food and beverage processing.",
-        features: ["Falling Film Evaporators", "Storage Tanks", "Heat Recovery"],
-        gradient: "from-blue-500 via-slate-500 to-blue-700",
+        icon: Factory,
+        title: "Petrochemical Industry",
+        description: "Advanced solutions for refining and producing petrochemical products.",
+        features: ["Distillation Columns", "Cracking Furnaces", "Heat Exchangers"],
+        gradient: "from-slate-600 via-gray-700 to-zinc-800",
         number: "03",
     },
     {
-        icon: Fuel,
-        title: "Petrochemical",
-        description: "Durable equipment for oil refining and petrochemical processes.",
-        features: ["Pressure Vessels", "Re-boilers", "Distillation Columns"],
-        gradient: "from-slate-500 via-blue-500 to-slate-700",
+        icon: Building,
+        title: "Energy Sector",
+        description: "Equipment for power generation and renewable energy applications.",
+        features: ["Heat Recovery Systems", "Boilers", "Turbine Components"],
+        gradient: "from-lime-500 via-green-500 to-emerald-600",
         number: "04",
     },
     {
-        icon: TestTubes,
-        title: "Research & Development",
-        description: "Pilot-scale units for experimental and scale-up studies.",
-        features: ["Pilot Plants", "Batch Systems", "Data Logging"],
-        gradient: "from-blue-600 via-slate-600 to-blue-800",
+        icon: Leaf,
+        title: "Industrial Processing",
+        description: "Versatile equipment for a wide range of general industrial applications.",
+        features: ["Mixing Tanks", "Conveying Systems", "Drying Units"],
+        gradient: "from-indigo-500 via-purple-500 to-pink-500",
         number: "05",
     },
-    {
-        icon: Building,
-        title: "Industrial Utilities",
-        description: "Robust utility solutions for process plants and facilities.",
-        features: ["Heat Exchangers", "Steam Heaters", "Hot Water Coils"],
-        gradient: "from-slate-600 via-blue-600 to-slate-800",
-        number: "06",
-    }
 ];
 
 const ModernIndustrySolutions = () => {
@@ -224,14 +215,7 @@ const ModernIndustrySolutions = () => {
                                     ))}
                                 </div>
 
-                                {/* CTA Button */}
-                                <Button
-                                    size="lg"
-                                    className="bg-gradient-to-r from-blue-600 to-slate-600 hover:from-blue-700 hover:to-slate-700 text-white px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                                >
-                                    Learn More
-                                    <ArrowRight className="w-5 h-5 ml-2" />
-                                </Button>
+
                             </motion.div>
                         </div>
                     </div>

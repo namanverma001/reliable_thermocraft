@@ -23,16 +23,6 @@ const projects = [
         category: "Storage & Containment",
         image: pressurevessel,
         description: "Custom-engineered pressure vessels designed for high-pressure and corrosive applications with reliable performance.",
-        specs: [
-            "Design Pressure: Up to 100 bar",
-            "Material: SS316/SS304/Carbon Steel",
-            "Capacity: 100L to 100,000L"
-        ],
-        applications: [
-            "Chemical Processing",
-            "Oil & Gas",
-            "Pharmaceutical"
-        ],
         tags: ["High Pressure", "Custom Design", "Corrosion Resistant"]
     },
     {
@@ -41,16 +31,6 @@ const projects = [
         category: "Reaction Systems",
         image: chemicalreactor,
         description: "Robust chemical reactors for various reaction types with options for agitation, temperature control, and pressure regulation.",
-        specs: [
-            "Capacity: 50L to 50,000L",
-            "Material: SS316/SS304/Glass Lined",
-            "Temperature: Up to 300°C"
-        ],
-        applications: [
-            "Pharmaceuticals",
-            "Petrochemicals",
-            "Fine Chemicals"
-        ],
         tags: ["Jacketed", "Agitator", "Temperature Control"]
     },
     {
@@ -59,16 +39,6 @@ const projects = [
         category: "Heat Transfer",
         image: heatExchanger,
         description: "Highly efficient heat exchangers including shell & tube, plate, and air-cooled models for industrial heat transfer applications.",
-        specs: [
-            "Type: Shell & Tube / Plate / Finned",
-            "Material: SS316/SS304/Copper",
-            "Thermal Duty: Up to 500 kW"
-        ],
-        applications: [
-            "HVAC",
-            "Power Plants",
-            "Chemical Industry"
-        ],
         tags: ["Thermal Efficiency", "Compact Design", "Low Fouling"]
     },
     {
@@ -77,16 +47,6 @@ const projects = [
         category: "Storage & Containment",
         image: storageTank,
         description: "Durable storage tanks designed for atmospheric and low-pressure applications, customizable for various industries.",
-        specs: [
-            "Capacity: 500L to 100,000L",
-            "Material: SS316/SS304/MS",
-            "Configuration: Vertical/Horizontal"
-        ],
-        applications: [
-            "Water Storage",
-            "Chemical Storage",
-            "Food Industry"
-        ],
         tags: ["Atmospheric", "Custom Size", "Corrosion Resistant"]
     },
     {
@@ -95,16 +55,6 @@ const projects = [
         category: "Separation Systems",
         image: distillationColumn,
         description: "High-efficiency distillation columns for separation and purification of chemical mixtures in continuous or batch modes.",
-        specs: [
-            "Height: Up to 30 meters",
-            "Material: SS316/SS304",
-            "Packing: Structured/Random/Tray"
-        ],
-        applications: [
-            "Petrochemical",
-            "Solvent Recovery",
-            "Pharmaceutical"
-        ],
         tags: ["Separation", "High Purity", "Fractionation"]
     },
     {
@@ -113,16 +63,6 @@ const projects = [
         category: "Thermal Equipment",
         image: reboiler,
         description: "Reliable re-boilers designed to supply heat to distillation columns with consistent thermal efficiency and control.",
-        specs: [
-            "Type: Kettle / Thermosyphon / Forced Circulation",
-            "Material: SS316/SS304",
-            "Capacity: Custom Designs"
-        ],
-        applications: [
-            "Distillation",
-            "Refining",
-            "Chemical Recovery"
-        ],
         tags: ["Heat Supply", "Column Integration", "Energy Efficient"]
     },
     {
@@ -131,16 +71,6 @@ const projects = [
         category: "Reaction Systems",
         image: limpetJacketed,
         description: "Specialized vessels with limpet coil or jacketed options for controlled heating/cooling in chemical processing.",
-        specs: [
-            "Capacity: 100L to 50,000L",
-            "Material: SS316/SS304",
-            "Pressure: Up to 10 bar"
-        ],
-        applications: [
-            "Chemical Reaction",
-            "Heat Exchange",
-            "Pharmaceutical"
-        ],
         tags: ["Thermal Jacket", "Pressure Rated", "Custom Agitation"]
     },
     {
@@ -149,16 +79,6 @@ const projects = [
         category: "Heat Transfer",
         image: finnedHeatExchanger,
         description: "Versatile finned tube heat exchangers and air heaters for efficient thermal management in air and liquid applications.",
-        specs: [
-            "Type: Finned Tube / Coil / Air Heater",
-            "Material: SS/Copper/Aluminium",
-            "Temperature: Up to 300°C"
-        ],
-        applications: [
-            "HVAC Systems",
-            "Drying Processes",
-            "Industrial Heating"
-        ],
         tags: ["Air Heating", "Compact", "Energy Efficient"]
     }
 ];
@@ -257,8 +177,8 @@ const ProjectShowcase = () => {
                                                 </Card>
                                             </motion.div>
                                         </DialogTrigger>
-                                        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto w-[95vw] md:w-auto left-[2.5%] md:left-[50%] translate-x-0 md:translate-x-[-50%]">
-                                            <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+                                        <DialogContent className="max-w-4xl w-[90vw] max-h-[90vh] overflow-y-auto">
+                                            <div className="grid md:grid-cols-2 gap-8">
                                                 <div className="aspect-[4/3] relative overflow-hidden rounded-lg">
                                                     <img
                                                         src={project.image}
@@ -266,31 +186,11 @@ const ProjectShowcase = () => {
                                                         className="w-full h-full object-cover"
                                                     />
                                                 </div>
-                                                <div className="space-y-4 md:space-y-6">
+                                                <div className="space-y-6">
                                                     <div>
-                                                        <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">{project.title}</h3>
-                                                        <Badge className="mb-2 md:mb-4" variant="secondary">{project.category}</Badge>
-                                                        <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">{project.description}</p>
-                                                    </div>
-
-                                                    <div className="space-y-4 md:space-y-6">
-                                                        <div>
-                                                            <h4 className="text-base md:text-lg font-semibold mb-2">Specifications</h4>
-                                                            <ul className="list-disc list-inside space-y-1 text-gray-600 text-sm md:text-base">
-                                                                {project.specs.map((spec, index) => (
-                                                                    <li key={index}>{spec}</li>
-                                                                ))}
-                                                            </ul>
-                                                        </div>
-
-                                                        <div>
-                                                            <h4 className="text-base md:text-lg font-semibold mb-2">Applications</h4>
-                                                            <ul className="list-disc list-inside space-y-1 text-gray-600 text-sm md:text-base">
-                                                                {project.applications.map((app, index) => (
-                                                                    <li key={index}>{app}</li>
-                                                                ))}
-                                                            </ul>
-                                                        </div>
+                                                        <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                                                        <Badge className="mb-4" variant="secondary">{project.category}</Badge>
+                                                        <p className="text-gray-600 text-base leading-relaxed">{project.description}</p>
                                                     </div>
                                                 </div>
                                             </div>

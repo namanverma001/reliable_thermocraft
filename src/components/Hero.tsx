@@ -106,7 +106,7 @@ const Hero = () => {
               ? 'opacity-0 transform translate-y-12'
               : 'opacity-100 transform translate-y-0'
               }`} style={{ transitionDelay: '0.5s' }}>
-              <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 flex items-center justify-center group hover:scale-105 hover:shadow-lg" onClick={() => navigate('/services')}>
+              <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 flex items-center justify-center group hover:scale-105 hover:shadow-lg" onClick={() => navigate('/products')}>
                 Explore Services
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
               </button>

@@ -44,12 +44,6 @@ type Product = {
   image: string
   gallery: string[]
   features: string[]
-  specifications: {
-    [key: string]: string
-  }
-  applications: string[]
-  rating: number
-  reviews: number
 }
 
 const products: Product[] = [
@@ -63,14 +57,6 @@ const products: Product[] = [
     image: pressurevessel,
     gallery: [pressurevessel],
     features: ["High Pressure", "Corrosion Resistant", "Custom Design", "Long Service Life"],
-    specifications: {
-      "Design Pressure": "Up to 100 bar",
-      "Material": "SS316/SS304/Carbon Steel",
-      "Capacity": "100L to 100,000L"
-    },
-    applications: ["Chemical Processing", "Oil & Gas", "Pharmaceutical"],
-    rating: 4.7,
-    reviews: 21
   },
   {
     id: 2,
@@ -82,14 +68,6 @@ const products: Product[] = [
     image: chemicalreactor,
     gallery: [chemicalreactor],
     features: ["Agitation", "Temperature Control", "Jacketed Design", "Durable Construction"],
-    specifications: {
-      "Capacity": "50L to 50,000L",
-      "Material": "SS316/SS304/Glass Lined",
-      "Max Temperature": "Up to 300°C"
-    },
-    applications: ["Pharmaceuticals", "Petrochemicals", "Fine Chemicals"],
-    rating: 4.6,
-    reviews: 19
   },
   {
     id: 3,
@@ -101,14 +79,6 @@ const products: Product[] = [
     image: heatExchanger,
     gallery: [heatExchanger],
     features: ["Thermal Efficiency", "Compact Design", "Low Fouling", "Custom Options"],
-    specifications: {
-      "Type": "Shell & Tube / Plate / Finned",
-      "Material": "SS316/SS304/Copper",
-      "Thermal Duty": "Up to 500 kW"
-    },
-    applications: ["HVAC", "Power Plants", "Chemical Industry"],
-    rating: 4.8,
-    reviews: 25
   },
   {
     id: 4,
@@ -120,14 +90,6 @@ const products: Product[] = [
     image: storageTank,
     gallery: [storageTank],
     features: ["Corrosion Resistant", "Customizable", "Leak-Proof", "High Capacity"],
-    specifications: {
-      "Capacity": "500L to 100,000L",
-      "Material": "SS316/SS304/MS",
-      "Configuration": "Vertical/Horizontal"
-    },
-    applications: ["Water Storage", "Chemical Storage", "Food Industry"],
-    rating: 4.5,
-    reviews: 17
   },
   {
     id: 5,
@@ -139,14 +101,6 @@ const products: Product[] = [
     image: distillationColumn,
     gallery: [distillationColumn],
     features: ["High Separation Efficiency", "Optimized Internals", "Flexible Operation", "Energy Efficient"],
-    specifications: {
-      "Height": "Up to 30 meters",
-      "Material": "SS316/SS304",
-      "Packing": "Structured/Random/Tray"
-    },
-    applications: ["Petrochemical", "Solvent Recovery", "Pharmaceutical"],
-    rating: 4.9,
-    reviews: 28
   },
   {
     id: 6,
@@ -158,14 +112,6 @@ const products: Product[] = [
     image: reboiler,
     gallery: [reboiler],
     features: ["Column Integration", "High Efficiency", "Compact Design", "Multiple Configurations"],
-    specifications: {
-      "Type": "Kettle / Thermosyphon / Forced Circulation",
-      "Material": "SS316/SS304",
-      "Capacity": "Custom Designs"
-    },
-    applications: ["Distillation", "Refining", "Chemical Recovery"],
-    rating: 4.6,
-    reviews: 22
   },
   {
     id: 7,
@@ -177,14 +123,6 @@ const products: Product[] = [
     image: limpetJacketed,
     gallery: [limpetJacketed],
     features: ["Thermal Control", "Pressure Rated", "Agitation Options", "Durable"],
-    specifications: {
-      "Capacity": "100L to 50,000L",
-      "Material": "SS316/SS304",
-      "Pressure": "Up to 10 bar"
-    },
-    applications: ["Chemical Reaction", "Heat Exchange", "Pharmaceutical"],
-    rating: 4.7,
-    reviews: 20
   },
   {
     id: 8,
@@ -196,14 +134,6 @@ const products: Product[] = [
     image: finnedHeatExchanger,
     gallery: [finnedHeatExchanger],
     features: ["Compact", "Energy Efficient", "Air Heating", "High Performance"],
-    specifications: {
-      "Type": "Finned Tube / Coil / Air Heater",
-      "Material": "SS/Copper/Aluminium",
-      "Temperature": "Up to 300°C"
-    },
-    applications: ["HVAC Systems", "Drying Processes", "Industrial Heating"],
-    rating: 4.5,
-    reviews: 18
   }
 ];
 
@@ -396,10 +326,6 @@ export default function Products() {
                             <Badge className="absolute top-3 left-3 md:top-4 md:left-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white border-0 text-xs md:text-sm px-3 md:px-4 py-1 md:py-2 shadow-lg">
                               {product.category}
                             </Badge>
-                            <div className="absolute top-3 right-3 md:top-4 md:right-4 flex items-center space-x-1 bg-white/90 px-2 md:px-3 py-1 rounded-full">
-                              <Star className="h-3 w-3 md:h-4 md:w-4 text-yellow-400 fill-current" />
-                              <span className="text-xs md:text-sm font-semibold text-gray-800">{product.rating}</span>
-                            </div>
                           </div>
 
                           <CardHeader className="pb-4">
@@ -463,39 +389,6 @@ export default function Products() {
                                   </li>
                                 ))}
                               </ul>
-                            </div>
-
-                            <div>
-                              <h4 className="text-base md:text-lg font-semibold mb-2">Specifications</h4>
-                              <ul className="list-disc list-inside space-y-1 text-gray-600 text-sm md:text-base">
-                                {Object.entries(product.specifications).map(([key, value], index) => (
-                                  <li key={index}><strong>{key}:</strong> {value}</li>
-                                ))}
-                              </ul>
-                            </div>
-
-                            <div>
-                              <h4 className="text-base md:text-lg font-semibold mb-2">Applications</h4>
-                              <ul className="list-disc list-inside space-y-1 text-gray-600 text-sm md:text-base">
-                                {product.applications.map((app, index) => (
-                                  <li key={index}>{app}</li>
-                                ))}
-                              </ul>
-                            </div>
-
-                            <div className="flex items-center space-x-2">
-                              {[...Array(5)].map((_, i) => (
-                                <Star
-                                  key={i}
-                                  className={`h-4 w-4 ${i < Math.floor(product.rating)
-                                    ? "text-yellow-400 fill-current"
-                                    : "text-gray-300"
-                                    }`}
-                                />
-                              ))}
-                              <span className="text-sm text-gray-600 font-medium">
-                                {product.rating} ({product.reviews} reviews)
-                              </span>
                             </div>
                           </div>
                         </div>
