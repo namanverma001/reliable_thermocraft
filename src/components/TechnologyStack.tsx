@@ -9,33 +9,33 @@ import { useNavigate } from 'react-router-dom';
 const technologies = [
     {
         icon: Thermometer,
-        title: "Temperature Control",
-        description: "Precision temperature management systems with real-time monitoring and control"
+        title: "Text to be added (client will provide)",
+        description: "Text to be added (client will provide)"
     },
     {
         icon: Cpu,
-        title: "Smart Automation",
-        description: "Advanced automation solutions for optimal process efficiency"
+        title: "Text to be added (client will provide)",
+        description: "Text to be added (client will provide)"
     },
     {
         icon: Gauge,
-        title: "Performance Monitoring",
-        description: "Real-time performance tracking and analytics systems"
+        title: "Text to be added (client will provide)",
+        description: "Text to be added (client will provide)"
     },
     {
         icon: Shield,
-        title: "Safety Systems",
-        description: "Integrated safety protocols and emergency response systems"
+        title: "Text to be added (client will provide)",
+        description: "Text to be added (client will provide)"
     },
     {
         icon: Lightbulb,
-        title: "Energy Efficiency",
-        description: "Innovative solutions for maximum energy conservation"
+        title: "Text to be added (client will provide)",
+        description: "Text to be added (client will provide)"
     },
     {
         icon: Cog,
-        title: "Process Integration",
-        description: "Seamless integration with existing industrial processes"
+        title: "Text to be added (client will provide)",
+        description: "Text to be added (client will provide)"
     }
 ];
 

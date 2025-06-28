@@ -68,8 +68,7 @@ export default function WhoWeAre() {
                             scale: 1.02,
                         }}
                     >
-                        At Reliable Thermocraft, we are industry leaders in thermal process engineering and reactor systems design. Our state-of-the-art facilities and expert engineering team specialize in creating innovative thermal solutions that drive industrial excellence. We combine cutting-edge technology with precision engineering to deliver systems that meet the highest safety standards and efficiency requirements. From custom reactor designs to integrated thermal management solutions, we ensure optimal performance and reliability for your critical processes.
-                    </motion.p>
+                        Welcome to Reliable Thermocraft, where we pioneer excellence in industrial equipment manufacturing. Since 2005, we have been a trusted partner for the Oil and Gas, Chemical, API, and Energy Industries, delivering innovative, high-quality solutions that drive global operations. With our state-of-the-art facility and a team of dedicated professionals, we specialize in crafting Pressure Vessels, Chemical Reactors, Distillation Columns, Storage Tanks, Heat Exchangers, Fins tube heat exchanger, and more. Our turnkey project commissioning ensures seamless integration tailored to your needs.                    </motion.p>
                 </div>
             </div>
 

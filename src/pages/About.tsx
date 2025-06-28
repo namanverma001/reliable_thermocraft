@@ -31,7 +31,7 @@ const AboutPage = () => {
                 About Reliable Thermocraft
               </h1>
               <p className="text-xl text-gray-100 max-w-3xl mx-auto">
-                Learn about our journey, values, and commitment to delivering exceptional thermal management solutions since 1995.
+                Learn about our journey, values, and commitment to delivering exceptional thermal management solutions since 2005.
               </p>
             </div>
           </div>
@@ -39,9 +39,9 @@ const AboutPage = () => {
 
         {/* Rest of the Content */}
         <About />
+        <Aboutjourney />
         <Aboutus />
         <Aboutmission />
-        <Aboutjourney />
       </main>
       <Footer />
     </div>

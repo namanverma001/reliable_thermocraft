@@ -9,40 +9,40 @@ const industries = [
     {
         icon: Fuel,
         title: "Oil and Gas Industry",
-        description: "Durable and reliable equipment for upstream, midstream, and downstream operations.",
-        features: ["Pressure Vessels", "Separators", "Glycol Dehydration Units"],
+        description: "Description to be added.",
+        features: ["Feature text to be added.", "Feature text to be added.", "Feature text to be added."],
         gradient: "from-orange-500 via-amber-500 to-yellow-600",
         number: "01",
     },
     {
         icon: TestTubes,
         title: "Chemical and Pharma Industry",
-        description: "High-purity systems for chemical synthesis and pharmaceutical manufacturing.",
-        features: ["Glass-Lined Reactors", "Sterile Vessels", "Wiped Film Evaporators"],
+        description: "Description to be added.",
+        features: ["Feature text to be added.", "Feature text to be added.", "Feature text to be added."],
         gradient: "from-cyan-500 via-teal-500 to-emerald-600",
         number: "02",
     },
     {
         icon: Factory,
         title: "Petrochemical Industry",
-        description: "Advanced solutions for refining and producing petrochemical products.",
-        features: ["Distillation Columns", "Cracking Furnaces", "Heat Exchangers"],
+        description: "Description to be added.",
+        features: ["Feature text to be added.", "Feature text to be added.", "Feature text to be added."],
         gradient: "from-slate-600 via-gray-700 to-zinc-800",
         number: "03",
     },
     {
         icon: Building,
         title: "Energy Sector",
-        description: "Equipment for power generation and renewable energy applications.",
-        features: ["Heat Recovery Systems", "Boilers", "Turbine Components"],
+        description: "Description to be added.",
+        features: ["Feature text to be added.", "Feature text to be added.", "Feature text to be added."],
         gradient: "from-lime-500 via-green-500 to-emerald-600",
         number: "04",
     },
     {
         icon: Leaf,
         title: "Industrial Processing",
-        description: "Versatile equipment for a wide range of general industrial applications.",
-        features: ["Mixing Tanks", "Conveying Systems", "Drying Units"],
+        description: "Description to be added.",
+        features: ["Feature text to be added.", "Feature text to be added.", "Feature text to be added."],
         gradient: "from-indigo-500 via-purple-500 to-pink-500",
         number: "05",
     },
@@ -95,7 +95,7 @@ const ModernIndustrySolutions = () => {
                     <h2 className="text-6xl md:text-7xl font-black text-slate-900 mb-4 leading-none">
                         Industry
                         <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-slate-600">Solutions</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-slate-600">we Served</span>
                     </h2>
                 </motion.div>
 

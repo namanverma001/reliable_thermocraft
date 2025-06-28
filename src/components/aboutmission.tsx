@@ -9,7 +9,6 @@ export default function Component() {
     const tabs = [
         { id: "mission", label: "Mission", icon: Target },
         { id: "vision", label: "Vision", icon: Eye },
-        { id: "values", label: "Core Values", icon: Award },
     ]
 
     const content = {
@@ -61,30 +60,30 @@ export default function Component() {
                 },
             ],
         },
-        values: {
-            title: "Core Values",
-            subtitle: "The Principles That Guide Our Every Decision",
-            description:
-                "Our core values form the foundation of our organizational culture, driving us to maintain the highest standards of integrity, innovation, and customer service in everything we do.",
-            keyPoints: [
-                {
-                    title: "Integrity & Trust",
-                    description: "Maintaining transparency and ethical practices in all business dealings",
-                },
-                {
-                    title: "Innovation & Excellence",
-                    description: "Continuously pushing boundaries to deliver superior solutions",
-                },
-                {
-                    title: "Customer Focus",
-                    description: "Placing customer needs at the center of everything we do",
-                },
-                {
-                    title: "Sustainable Growth",
-                    description: "Building for the future while respecting environmental responsibilities",
-                },
-            ],
-        },
+        // values: {
+        //     title: "Core Values",
+        //     subtitle: "The Principles That Guide Our Every Decision",
+        //     description:
+        //         "Our core values form the foundation of our organizational culture, driving us to maintain the highest standards of integrity, innovation, and customer service in everything we do.",
+        //     keyPoints: [
+        //         {
+        //             title: "Integrity & Trust",
+        //             description: "Maintaining transparency and ethical practices in all business dealings",
+        //         },
+        //         {
+        //             title: "Innovation & Excellence",
+        //             description: "Continuously pushing boundaries to deliver superior solutions",
+        //         },
+        //         {
+        //             title: "Customer Focus",
+        //             description: "Placing customer needs at the center of everything we do",
+        //         },
+        //         {
+        //             title: "Sustainable Growth",
+        //             description: "Building for the future while respecting environmental responsibilities",
+        //         },
+        //     ],
+        // },
     }
 
     const currentContent = content[activeTab as keyof typeof content]
@@ -229,7 +228,7 @@ export default function Component() {
                         </div>
 
                         {/* Bottom Feature Bar - Mobile Responsive */}
-                        <motion.div
+                        {/* <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.9 }}
@@ -265,7 +264,7 @@ export default function Component() {
                                     <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">Sustainable technology solutions</p>
                                 </div>
                             </div>
-                        </motion.div>
+                        </motion.div> */}
                     </motion.div>
                 </AnimatePresence>
             </div>

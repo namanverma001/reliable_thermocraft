@@ -7,27 +7,27 @@ const Hero = () => {
   const slides = [
     {
       image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1200&h=800&q=80",
-      title: "Reliable Thermocraft",
-      subtitle: "Process Engineering Experts",
-      description: "Precision-engineered pressure vessels, reactors, heat exchangers, and storage tanks — built for industrial excellence."
+      title: "Your Text 1",
+      subtitle: "Your subtitle 1",
+      description: "Your description goes here. "
     },
     {
       image: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&w=1200&h=800&q=80",
-      title: "Thermal Process Systems",
-      subtitle: "Built to Perform",
-      description: "End-to-end thermal and separation solutions customized for chemical, pharmaceutical, and petrochemical industries."
+      title: "Your Text 2",
+      subtitle: "Your subtitle 2",
+      description: "Your description goes here. "
     },
     {
       image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&h=800&q=80",
-      title: "Smart Industrial Heating",
-      subtitle: "Safe. Efficient. Scalable.",
-      description: "Limpet coil vessels, re-boilers, and air heaters designed for consistent process temperature control."
+      title: "Your Text 3",
+      subtitle: "Your subtitle 3",
+      description: "Your description goes here. "
     },
     {
       image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&h=800&q=80",
-      title: "Pilot & R&D Units",
-      subtitle: "Scale-Up Ready",
-      description: "Modular pilot plants and lab-scale systems for experimentation, testing, and innovation in manufacturing processes."
+      title: "Your Text 4",
+      subtitle: "Your subtitle 4",
+      description: "Your description goes here. "
     }
   ];
 
@@ -131,14 +131,14 @@ const Hero = () => {
                 <div className="flex items-center justify-center mb-2">
                   <Users className="w-6 h-6 text-blue-300 group-hover:text-blue-200 transition-colors duration-300" />
                 </div>
-                <div className="text-2xl font-bold text-white">500+</div>
+                <div className="text-2xl font-bold text-white">00+</div>
                 <div className="text-sm text-blue-200">Happy Clients</div>
               </div>
               <div className="text-center group hover:scale-110 transition-transform duration-300">
                 <div className="flex items-center justify-center mb-2">
                   <Shield className="w-6 h-6 text-blue-300 group-hover:text-blue-200 transition-colors duration-300" />
                 </div>
-                <div className="text-2xl font-bold text-white">99.9%</div>
+                <div className="text-2xl font-bold text-white">00%</div>
                 <div className="text-sm text-blue-200">Reliability</div>
               </div>
             </div>

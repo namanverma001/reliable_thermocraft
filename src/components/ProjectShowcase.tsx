@@ -22,64 +22,64 @@ const projects = [
         title: "Pressure Vessels",
         category: "Storage & Containment",
         image: pressurevessel,
-        description: "Custom-engineered pressure vessels designed for high-pressure and corrosive applications with reliable performance.",
-        tags: ["High Pressure", "Custom Design", "Corrosion Resistant"]
+        description: "Custom-engineered vessels for high-pressure applications with optimized design for your specific operating conditions and material requirements.",
+        tags: ["Tag to be added"]
     },
     {
         id: 2,
         title: "Chemical Reactors",
         category: "Reaction Systems",
         image: chemicalreactor,
-        description: "Robust chemical reactors for various reaction types with options for agitation, temperature control, and pressure regulation.",
-        tags: ["Jacketed", "Agitator", "Temperature Control"]
+        description: "Application-specific reactor designs with custom internals, agitation systems, and heat transfer solutions for enhanced process efficiency.",
+        tags: ["Tag to be added"]
     },
     {
         id: 3,
         title: "Heat Exchangers",
         category: "Heat Transfer",
         image: heatExchanger,
-        description: "Highly efficient heat exchangers including shell & tube, plate, and air-cooled models for industrial heat transfer applications.",
-        tags: ["Thermal Efficiency", "Compact Design", "Low Fouling"]
+        description: "Shell & tube, plate type, and air-cooled configurations optimized for your thermal duty requirements and fouling considerations.",
+        tags: ["Tag to be added"]
     },
     {
         id: 4,
         title: "Storage Tanks",
         category: "Storage & Containment",
         image: storageTank,
-        description: "Durable storage tanks designed for atmospheric and low-pressure applications, customizable for various industries.",
-        tags: ["Atmospheric", "Custom Size", "Corrosion Resistant"]
+        description: "Atmospheric and low-pressure storage solutions with corrosion-resistant materials and custom nozzle configurations per process needs.",
+        tags: ["Tag to be added"]
     },
     {
         id: 5,
         title: "Distillation Column",
         category: "Separation Systems",
         image: distillationColumn,
-        description: "High-efficiency distillation columns for separation and purification of chemical mixtures in continuous or batch modes.",
-        tags: ["Separation", "High Purity", "Fractionation"]
+        description: "Tray and packed column designs with optimized internals for your specific separation requirements and throughput capacity.",
+        tags: ["Tag to be added"]
     },
     {
         id: 6,
         title: "Re-boiler",
         category: "Thermal Equipment",
         image: reboiler,
-        description: "Reliable re-boilers designed to supply heat to distillation columns with consistent thermal efficiency and control.",
-        tags: ["Heat Supply", "Column Integration", "Energy Efficient"]
+        description: "Thermosiphon, forced circulation, and kettle-type configurations designed for your column's heat duty and operating parameters.",
+        tags: ["Tag to be added"]
     },
     {
         id: 7,
         title: "Limpet Coil & Jacketed Vessels",
         category: "Reaction Systems",
         image: limpetJacketed,
-        description: "Specialized vessels with limpet coil or jacketed options for controlled heating/cooling in chemical processing.",
-        tags: ["Thermal Jacket", "Pressure Rated", "Custom Agitation"]
+        description: "Heat transfer solutions for temperature-sensitive processes with customized coil configurations and jacket designs for optimal thermal performance.",
+        tags: ["Tag to be added"]
     },
     {
         id: 8,
         title: "Finned Tube Heat Exchanger / Steam Air Heater / Hot Water Coils",
         category: "Heat Transfer",
         image: finnedHeatExchanger,
-        description: "Versatile finned tube heat exchangers and air heaters for efficient thermal management in air and liquid applications.",
-        tags: ["Air Heating", "Compact", "Energy Efficient"]
+        description: "Fine Tube Heat Exchangers, Steam Air Heater, Hot Water Coils  Compact heat transfer solutions with enhanced surface area design for high thermal efficiency in limited space applications, ideal for precise temperature control requirements.",
+        tags: ["Tag to be added"]
     }
 ];
 

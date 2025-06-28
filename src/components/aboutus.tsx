@@ -14,97 +14,73 @@ const equipmentData = {
     "pressure-vessels": {
         title: "Pressure Vessels",
         description:
-            "High-quality pressure vessels designed for various industrial applications. Our vessels are manufactured to meet international standards and can handle extreme pressures and temperatures.",
+            "Custom-engineered vessels for high-pressure applications with optimized design for your specific operating conditions and material requirements.",
         image: pressurevessel,
         specifications: [
-            "Working pressure: Up to 300 bar",
-            "Temperature range: -40°C to 600°C",
-            "Material: Carbon steel, Stainless steel, Alloy steel",
-            "Capacity: 50L to 50,000L",
+            "Specification text will add here "
         ],
     },
     "chemical-reactors": {
         title: "Chemical Reactors",
         description:
-            "Advanced chemical reactors for pharmaceutical, chemical, and petrochemical industries. Designed for optimal mixing, heat transfer, and reaction control.",
+            "Application-specific reactor designs with custom internals, agitation systems, and heat transfer solutions for enhanced process efficiency.",
         image: chemicalreactor,
         specifications: [
-            "Volume: 100L to 20,000L",
-            "Agitation speed: Variable RPM",
-            "Heating/Cooling: Jacket or coil system",
-            "Material: SS316L, Hastelloy, Inconel",
+            "Specification text will add here "
         ],
     },
     "heat-exchangers": {
         title: "Heat Exchangers",
         description:
-            "Efficient heat exchangers for thermal management in industrial processes. Available in shell & tube, plate, and spiral configurations.",
+            "Shell & tube, plate type, and air-cooled configurations optimized for your thermal duty requirements and fouling considerations.",
         image: heatExchanger,
         specifications: [
-            "Heat transfer area: 1-1000 m²",
-            "Design pressure: Up to 40 bar",
-            "Design temperature: Up to 400°C",
-            "Types: Shell & tube, Plate, Spiral",
+            "Specification text will add here "
         ],
     },
     "storage-tanks": {
         title: "Storage Tanks",
         description:
-            "Robust storage tanks for liquid and gas storage applications. Custom-designed for specific requirements and environmental conditions.",
+            "Atmospheric and low-pressure storage solutions with corrosion-resistant materials and custom nozzle configurations per process needs.",
         image: storageTank,
         specifications: [
-            "Capacity: 1,000L to 100,000L",
-            "Material: MS, SS304, SS316L",
-            "Design: Vertical, Horizontal",
-            "Features: Insulation, Heating coils",
+            "Specification text will add here "
         ],
     },
     "distillation-column": {
         title: "Distillation Column",
         description:
-            "Precision-engineered distillation columns for separation processes. Optimized for maximum efficiency and product purity.",
+            "Tray and packed column designs with optimized internals for your specific separation requirements and throughput capacity.",
         image: distillationColumn,
         specifications: [
-            "Height: 3-30 meters",
-            "Diameter: 0.5-5 meters",
-            "Tray types: Sieve, Bubble cap, Valve",
-            "Packing: Structured, Random",
+            "Specification text will add here "
         ],
     },
     "re-boiler": {
         title: "Re-boiler",
         description:
-            "High-performance re-boilers for distillation and evaporation systems. Designed for optimal heat transfer and energy efficiency.",
+            "Thermosiphon, forced circulation, and kettle-type configurations designed for your column's heat duty and operating parameters.",
         image: reboiler,
         specifications: [
-            "Heat duty: 50kW to 5MW",
-            "Types: Thermosiphon, Forced circulation",
-            "Material: Carbon steel, Stainless steel",
-            "Design pressure: Up to 25 bar",
+            "Specification text will add here "
         ],
     },
     "limpet-coil-jacketed": {
         title: "Limpet Coil & Jacketed Vessels",
         description:
-            "Specialized vessels with limpet coils and jackets for precise temperature control in chemical and pharmaceutical processes.",
+            "Heat transfer solutions for temperature-sensitive processes with customized coil configurations and jacket designs for optimal thermal performance.",
         image: limpetJacketed,
         specifications: [
-            "Volume: 100L to 10,000L",
-            "Jacket pressure: Up to 10 bar",
-            "Coil material: SS316L, Copper",
-            "Insulation: PUF, Mineral wool",
+            "Specification text will add here "
         ],
     },
     "fins-tube-heat-exchanger": {
-        title: "Fins Tube Heat Exchanger / Steam Air Heater / Hot Water Coils",
+        title: "Finned Tube Heat Exchanger / Steam Air Heater / Hot Water Coils",
         description:
-            "Finned tube heat exchangers for air heating applications. Ideal for HVAC systems, industrial air heating, and process air treatment.",
+            "Fine Tube Heat Exchangers, Steam Air Heater, Hot Water Coils  Compact heat transfer solutions with enhanced surface area design for high thermal efficiency in limited space applications, ideal for precise temperature control requirements.",
         image: finnedHeatExchanger,
         specifications: [
-            "Fin material: Aluminum, Copper",
-            "Tube material: Copper, SS304",
-            "Air flow: 1000-50000 CFM",
-            "Steam pressure: Up to 10 bar",
+            "Specification text will add here "
         ],
     },
 }

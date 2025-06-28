@@ -7,16 +7,13 @@ import { useNavigate } from "react-router-dom";
 export default function RDExcellenceCenter() {
     const navigate = useNavigate();
 
+    // TODO: Replace with actual capabilities text from client
     const capabilities = [
-        "Lab-Scale Distillation Setup",
-        "Thin Film Evaporation",
-        "Membrane Separation Systems",
-        "Advanced Pervaporation Unit",
-        "Ultrafiltration & Nanofiltration",
-        "Agitated Thin Film Dryer",
-        "Wiped Film Evaporator",
-        "Batch Distillation Systems",
-        "Industrial Fermentation Unit"
+        "Capability 1",
+        "Capability 2",
+        "Capability 3",
+        "Capability 4",
+        "Capability 5"
     ];
     return (
         <section className="relative min-h-screen w-full overflow-hidden">
@@ -48,7 +45,7 @@ export default function RDExcellenceCenter() {
                                     transition={{ duration: 0.6, delay: 0.2 }}
                                     className="text-sm font-medium text-gray-600 tracking-wide uppercase"
                                 >
-                                    In-House Pilot Plants
+                                    TEXT TO BE ADDED
                                 </motion.p>
                                 <motion.h1
                                     initial={{ opacity: 0, y: 20 }}
@@ -56,9 +53,9 @@ export default function RDExcellenceCenter() {
                                     transition={{ duration: 0.6, delay: 0.3 }}
                                     className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight"
                                 >
-                                    R&D Excellence
+                                    CAPIBILITIES
                                     <br />
-                                    Center
+                                    TEXT
                                 </motion.h1>
                             </div>
 

@@ -9,44 +9,38 @@ const services = [
   {
     id: 1,
     number: '01.',
-    title: 'Reactor Systems',
-    description:
-      'State-of-the-art reactor systems designed and manufactured for optimal process efficiency and control, with custom solutions for every industry need.',
+    title: 'Your text here',
+    description: 'Your text here',
   },
   {
     id: 2,
     number: '02.',
-    title: 'Industrial Solutions',
-    description:
-      'Complete thermal process solutions for manufacturing and industrial applications, optimized for maximum efficiency and performance.',
+    title: 'Your text here',
+    description: 'Your text here',
   },
   {
     id: 3,
     number: '03.',
-    title: 'Engineering Excellence',
-    description:
-      'Expert engineering services combining innovative design with technical precision to deliver superior thermal management solutions.',
+    title: 'Your text here',
+    description: 'Your text here',
   },
   {
     id: 4,
     number: '04.',
-    title: 'Quality Assurance',
-    description:
-      'ISO 9001:2015 certified processes ensuring the highest standards of quality and safety in every system we deliver.',
+    title: 'Your text here',
+    description: 'Your text here',
   },
   {
     id: 5,
     number: '05.',
-    title: 'Technical Support',
-    description:
-      'Comprehensive 24/7 technical support and maintenance services to ensure your systems operate at peak performance.',
+    title: 'Your text here',
+    description: 'Your text here',
   },
   {
     id: 6,
     number: '06.',
-    title: 'System Integration',
-    description:
-      'Seamless integration of thermal solutions into your existing processes, with full commissioning and optimization support.',
+    title: 'Your text here',
+    description: 'Your text here',
   },
 ];
 

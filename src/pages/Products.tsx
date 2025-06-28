@@ -77,161 +77,161 @@ const services: Service[] = [
     title: "Pressure Vessels",
     description: "Custom-engineered vessels for high-pressure applications with optimized design for your specific operating conditions and material requirements.",
     icon: Layers,
-    features: ["High-Pressure Design", "Custom Materials", "Optimized for Operating Conditions", "ASME/PED Compliance"]
+    features: ["test Feature to be added"]
   },
   {
     id: 2,
     title: "Chemical Reactors",
     description: "Application-specific reactor designs with custom internals, agitation systems, and heat transfer solutions for enhanced process efficiency.",
     icon: FlaskConical,
-    features: ["Custom Internals", "Advanced Agitation Systems", "Integrated Heat Transfer", "Process-Specific Design"]
+    features: ["test Feature to be added"]
   },
   {
     id: 3,
     title: "Heat Exchangers",
     description: "Shell & tube, plate type, and air-cooled configurations optimized for your thermal duty requirements and fouling considerations.",
     icon: Waves,
-    features: ["Shell & Tube", "Plate & Frame", "Air-Cooled", "Optimized Thermal Duty"]
+    features: ["test Feature to be added"]
   },
   {
     id: 4,
     title: "Storage Tanks",
     description: "Atmospheric and low-pressure storage solutions with corrosion-resistant materials and custom nozzle configurations per process needs.",
     icon: Database,
-    features: ["Atmospheric & Low-Pressure", "Corrosion-Resistant Materials", "Custom Nozzles", "API 650/620 Standards"]
+    features: ["test Feature to be added"]
   },
   {
     id: 5,
     title: "Distillation Columns",
     description: "Tray and packed column designs with optimized internals for your specific separation requirements and throughput capacity.",
     icon: ChevronsUpDown,
-    features: ["Tray & Packed Columns", "Optimized Internals", "High Throughput Capacity", "Specific Separation Focus"]
+    features: ["test Feature to be added"]
   },
   {
     id: 6,
     title: "Re-boilers",
     description: "Thermosiphon, forced circulation, and kettle-type configurations designed for your column's heat duty and operating parameters.",
     icon: Heater,
-    features: ["Thermosiphon Type", "Forced Circulation", "Kettle Type", "Custom Heat Duty Design"]
+    features: ["test Feature to be added"]
   },
   {
     id: 7,
     title: "Limpet Coil & Jacketed Vessels",
     description: "Heat transfer solutions for temperature-sensitive processes with customized coil configurations and jacket designs for optimal thermal performance.",
     icon: Thermometer,
-    features: ["Custom Coil/Jacket Design", "Precise Temperature Control", "Optimal Thermal Performance", "For Sensitive Processes"]
+    features: ["test Feature to be added"]
   },
   {
     id: 8,
     title: "Mixing Tanks",
     description: "Heavy-duty agitation systems for high-viscosity applications with specialized impeller designs for ETP and chemical processing requirements.",
     icon: Blend,
-    features: ["Heavy-Duty Agitation", "High-Viscosity Solutions", "Specialized Impellers", "ETP & Chemical Processing"]
+    features: ["test Feature to be added"]
   },
   {
     id: 9,
     title: "Fine Tube Heat Exchangers",
     description: "Compact heat transfer solutions with enhanced surface area design for high thermal efficiency in limited space applications, ideal for precise temperature control requirements.",
     icon: Grid,
-    features: ["Compact Design", "Enhanced Surface Area", "High Thermal Efficiency", "Steam, Air & Water Coils"]
+    features: ["test Feature to be added"]
   },
   {
     id: 10,
     title: "Process Skids",
     description: "Complete pre-assembled process units with integrated piping, pumps, valves, instrumentation, and automation systems designed for rapid deployment and commissioning.",
     icon: Box,
-    features: ["Pre-Assembled Units", "Integrated Systems", "Rapid Deployment", "Turnkey Solutions"]
+    features: ["test Feature to be added"]
   }
 ]
 
 const products: Product[] = [
   {
     id: 1,
-    title: "Pressure Vessel",
+    title: "Pressure Vessels",
     subtitle: "Storage & Containment",
-    description: "Custom-engineered pressure vessels designed for high-pressure and corrosive applications with reliable performance.",
-    detailedDescription: "Our pressure vessels are engineered to meet stringent safety standards while providing reliable performance in gas and liquid processing applications. Built with corrosion-resistant materials and designed to handle various pressures, these vessels are ideal for chemical, oil & gas, and pharma sectors.",
+    description: "Custom-engineered vessels for high-pressure applications with optimized design for your specific operating conditions and material requirements.",
+    detailedDescription: "Custom-engineered vessels for high-pressure applications with optimized design for your specific operating conditions and material requirements.",
     category: "Pressure Vessels",
     image: pressurevessel,
     gallery: [pressurevessel],
-    features: ["High Pressure", "Corrosion Resistant", "Custom Design", "Long Service Life"],
+    features: ["Text to be added"],
   },
   {
     id: 2,
     title: "Chemical Reactors",
     subtitle: "Reaction Systems",
-    description: "Robust chemical reactors for various reaction types with options for agitation, temperature control, and pressure regulation.",
-    detailedDescription: "Reliable Thermocraft's chemical reactors offer precise temperature control, custom agitation, and high-pressure tolerance. Ideal for batch and continuous processing in pharmaceutical, fine chemical, and petrochemical industries.",
+    description: "Application-specific reactor designs with custom internals, agitation systems, and heat transfer solutions for enhanced process efficiency.",
+    detailedDescription: "Application-specific reactor designs with custom internals, agitation systems, and heat transfer solutions for enhanced process efficiency.",
     category: "Reactors",
     image: chemicalreactor,
     gallery: [chemicalreactor],
-    features: ["Agitation", "Temperature Control", "Jacketed Design", "Durable Construction"],
+    features: ["Text to be added"],
   },
   {
     id: 3,
     title: "Heat Exchangers",
-    subtitle: "Shell & Tube / Plate / Finned Type",
-    description: "Highly efficient heat exchangers including shell & tube, plate, and air-cooled models for industrial heat transfer applications.",
-    detailedDescription: "Our heat exchangers are designed for maximum thermal efficiency with options including shell & tube, finned tube, and plate types. Built to industry standards using stainless steel, copper, and special alloys for long life and high performance.",
+    subtitle: "Heat Transfer",
+    description: "Shell & tube, plate type, and air-cooled configurations optimized for your thermal duty requirements and fouling considerations.",
+    detailedDescription: "Shell & tube, plate type, and air-cooled configurations optimized for your thermal duty requirements and fouling considerations.",
     category: "Heat Exchangers",
     image: heatExchanger,
     gallery: [heatExchanger],
-    features: ["Thermal Efficiency", "Compact Design", "Low Fouling", "Custom Options"],
+    features: ["Text to be added"],
   },
   {
     id: 4,
     title: "Storage Tanks",
     subtitle: "Storage & Containment",
-    description: "Durable storage tanks designed for atmospheric and low-pressure applications, customizable for various industries.",
-    detailedDescription: "Our storage tanks are constructed from high-quality materials to ensure safe storage of process liquids. Designed for both atmospheric and low-pressure conditions, they are used across water treatment, food, and chemical sectors.",
+    description: "Atmospheric and low-pressure storage solutions with corrosion-resistant materials and custom nozzle configurations per process needs.",
+    detailedDescription: "Atmospheric and low-pressure storage solutions with corrosion-resistant materials and custom nozzle configurations per process needs.",
     category: "Storage",
     image: storageTank,
     gallery: [storageTank],
-    features: ["Corrosion Resistant", "Customizable", "Leak-Proof", "High Capacity"],
+    features: ["Text to be added"],
   },
   {
     id: 5,
     title: "Distillation Column",
     subtitle: "Separation Systems",
-    description: "High-efficiency distillation columns for separation and purification of chemical mixtures in continuous or batch modes.",
-    detailedDescription: "Our distillation columns are designed with structured and random packing options or trays for optimal separation. Built for continuous or batch operations, these units are ideal for refining, recovery, and high-purity production.",
+    description: "Tray and packed column designs with optimized internals for your specific separation requirements and throughput capacity.",
+    detailedDescription: "Tray and packed column designs with optimized internals for your specific separation requirements and throughput capacity.",
     category: "Reactors",
     image: distillationColumn,
     gallery: [distillationColumn],
-    features: ["High Separation Efficiency", "Optimized Internals", "Flexible Operation", "Energy Efficient"],
+    features: ["Text to be added"],
   },
   {
     id: 6,
     title: "Re-boiler",
     subtitle: "Thermal Equipment",
-    description: "Reliable re-boilers designed to supply heat to distillation columns with consistent thermal efficiency and control.",
-    detailedDescription: "Engineered for efficient heat supply, our re-boilers ensure smooth distillation operations with options including thermosyphon, kettle, and forced circulation types.",
+    description: "Thermosiphon, forced circulation, and kettle-type configurations designed for your column's heat duty and operating parameters.",
+    detailedDescription: "Thermosiphon, forced circulation, and kettle-type configurations designed for your column's heat duty and operating parameters.",
     category: "Heat Exchangers",
     image: reboiler,
     gallery: [reboiler],
-    features: ["Column Integration", "High Efficiency", "Compact Design", "Multiple Configurations"],
+    features: ["Text to be added"],
   },
   {
     id: 7,
     title: "Limpet Coil & Jacketed Vessels",
     subtitle: "Reaction Systems",
-    description: "Specialized vessels with limpet coil or jacketed options for controlled heating/cooling in chemical processing.",
-    detailedDescription: "These vessels ensure precise thermal control during reactions through limpet coil or jacketed designs, making them perfect for sensitive and exothermic processes.",
+    description: "Heat transfer solutions for temperature-sensitive processes with customized coil configurations and jacket designs for optimal thermal performance.",
+    detailedDescription: "Heat transfer solutions for temperature-sensitive processes with customized coil configurations and jacket designs for optimal thermal performance.",
     category: "Reactors",
     image: limpetJacketed,
     gallery: [limpetJacketed],
-    features: ["Thermal Control", "Pressure Rated", "Agitation Options", "Durable"],
+    features: ["Text to be added"],
   },
   {
     id: 8,
     title: "Finned Tube Heat Exchanger / Steam Air Heater / Hot Water Coils",
-    subtitle: "Heat Transfer Equipment",
-    description: "Versatile finned tube heat exchangers and air heaters for efficient thermal management in air and liquid applications.",
-    detailedDescription: "These units maximize thermal transfer in compact footprints. Ideal for air heating, steam distribution, and HVAC applications with superior energy efficiency.",
+    subtitle: "Heat Transfer",
+    description: "Fine Tube Heat Exchangers, Steam Air Heater, Hot Water Coils  Compact heat transfer solutions with enhanced surface area design for high thermal efficiency in limited space applications, ideal for precise temperature control requirements.",
+    detailedDescription: "Fine Tube Heat Exchangers, Steam Air Heater, Hot Water Coils  Compact heat transfer solutions with enhanced surface area design for high thermal efficiency in limited space applications, ideal for precise temperature control requirements.",
     category: "Heat Exchangers",
     image: finnedHeatExchanger,
     gallery: [finnedHeatExchanger],
-    features: ["Compact", "Energy Efficient", "Air Heating", "High Performance"],
+    features: ["Text to be added"],
   }
 ];
 

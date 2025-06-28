@@ -64,15 +64,14 @@ export default function SeparationTechVideo() {
                     className="flex-1 text-center md:text-left max-w-2xl"
                 >
                     <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-                        Global Leaders in
+                        YOUR TEXT
                         <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
-                            Separation Technology
+                            YOUR TEXT
                         </span>
                     </h2>
                     <p className="text-blue-100/80 text-lg md:text-xl max-w-xl">
-                        Pioneering innovative solutions for industrial excellence through advanced separation technology.
-                    </p>
+                        YOUR DESCRIPTION                    </p>
                 </motion.div>
             </div>
 

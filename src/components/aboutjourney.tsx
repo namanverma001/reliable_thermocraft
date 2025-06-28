@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Image from "@/Assets/team1.jpg"
 export default function OurJourney() {
-    const timelineYears = [2005, 2007, 2010, 2014, 2020, 2025]
+    const timelineYears = [2005, 2010, 2015, 2020, 2025]
 
     return (
         <div className="bg-gray-50 py-16 px-4 md:px-8">
@@ -13,8 +13,7 @@ export default function OurJourney() {
                             <h2 className="text-4xl md:text-5xl font-light text-gray-900">Our Journey</h2>
                             <h3 className="text-xl md:text-2xl font-medium text-gray-800">Beginning with Process Solutions</h3>
                             <p className="text-gray-600 text-lg leading-relaxed">
-                                Established in 2005, Process solutions with designing, manufacturing with installation of process
-                                technologies and complete turnkey solutions.
+                                Established in 2005, RELIABLE THERMOCRAFT stands as a trusted leader in the manufacturing of high-quality equipment for the oil and gas and chemical industries. With a steadfast commitment to innovation, precision, and client satisfaction, we have grown significantly, expanding our state-of-the-art manufacturing unit in 2020 to meet the evolving demands of our global clientele.
                             </p>
                         </div>
 
