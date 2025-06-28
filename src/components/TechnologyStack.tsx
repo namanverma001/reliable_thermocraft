@@ -9,33 +9,33 @@ import { useNavigate } from 'react-router-dom';
 const technologies = [
     {
         icon: Thermometer,
-        title: "Text to be added (client will provide)",
-        description: "Text to be added (client will provide)"
+        title: "Text to be added ",
+        description: "Text to be added "
     },
     {
         icon: Cpu,
-        title: "Text to be added (client will provide)",
-        description: "Text to be added (client will provide)"
+        title: "Text to be added ",
+        description: "Text to be added "
     },
     {
         icon: Gauge,
-        title: "Text to be added (client will provide)",
-        description: "Text to be added (client will provide)"
+        title: "Text to be added ",
+        description: "Text to be added "
     },
     {
         icon: Shield,
-        title: "Text to be added (client will provide)",
-        description: "Text to be added (client will provide)"
+        title: "Text to be added ",
+        description: "Text to be added "
     },
     {
         icon: Lightbulb,
-        title: "Text to be added (client will provide)",
-        description: "Text to be added (client will provide)"
+        title: "Text to be added ",
+        description: "Text to be added "
     },
     {
         icon: Cog,
-        title: "Text to be added (client will provide)",
-        description: "Text to be added (client will provide)"
+        title: "Text to be added ",
+        description: "Text to be added "
     }
 ];
 
